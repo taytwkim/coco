@@ -1,0 +1,56 @@
+########################################
+# OCaml Specific
+########################################
+# Compiled object files
+*.cmo
+*.cmi
+*.cmx
+*.o
+*.obj
+
+# Compiled libraries and executables
+*.cma
+*.cmxa
+*.a
+*.lib
+*.exe
+*.out
+
+# OCamlbuild and Dune build artifacts
+_build/
+.merlin
+.install
+*.install
+
+# Opam local switch or environment files
+_opam/
+*.opam.locked
+
+########################################
+# macOS Specific
+########################################
+.DS_Store
+.AppleDouble
+.LSOverride
+# Thumbnails
+._*
+
+########################################
+# VS Code Specific
+########################################
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+########################################
+# Generic / Tools
+########################################
+# Unit test coverage files
+bisect*.out
+_coverage/
+
+# Log files
+*.log
