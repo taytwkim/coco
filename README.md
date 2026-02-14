@@ -2,16 +2,26 @@
 
 ## `ps0`: OCaml Warm Up
 
-Getting familiar with OCaml.
+Getting started with OCaml.
 
 ## `ps1`: RISC-V Simulator
 
-Simulate how a RISC-V CPU executes instructions. The machine's status is represented in a `state` record containing the registers, memory, and Program Counter (PC).
+Simulate how a RISC-V CPU executes instructions. The machine's status is represented as a `state`, which includes registers, memory, and the Program Counter (PC).
 
 The simulator follows these steps in a loop:
 
-1. Fetch: It reads a 32-bit binary instruction from memory at the location pointed to by the PC.
+1. **Fetch**: Reads a 32-bit binary instruction from memory at the location pointed to by the PC.
 
-2. Decode: it breaks down that binary word to figure out which instruction it is (like Add or Beq) and extracts the numbers (immediates) needed.
+2. **Decode**: Decodes the binary word to figure out which instruction it is (like `Add` or `Beq`) and extracts the immediates needed.
 
-3. Execute: It updates the CPU state based on the instruction—for example, adding two registers or jumping to a new PC. During this step, we ensure "sign-extension" is handled so that negative numbers are calculated correctly.
+3. **Execute**: Updates the CPU state (registers, PC) based on the instruction.
+
+## `ps2`:  Parsing
+
+Implement a lexer and a parser for the Fish (Fortran-ish) programming language.
+
+Given the specifications of Fish, implement a lexer and parser that generate a valid AST from raw input source.
+
+We were given a choice between implementing the lexer/parser manually using a combinator-style approach, or using Lex (`ocamllex`) and Yacc (`ocamlyacc`). For this assignment, I used the latter.
+
+See `ps2/lex.mll` and `ps2/parse.mly` for the implementation details.
