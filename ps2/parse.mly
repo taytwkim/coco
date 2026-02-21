@@ -58,12 +58,13 @@ let parse_error s =
 %nonassoc NOT
 %nonassoc UMINUS  // unary minus e.g., -42
 
-/* dangling else, we give priority to match else to "if" that was right before, i.e., when we see "if", we check whether "if" is followed by an "else" */
+/* dangling else - we give priority to match else to "if" that came right before, i.e., when we see "if", we check whether "if" is followed by an "else" */
 %nonassoc IF_WITHOUT_ELSE
 %nonassoc TRY_ELSE
 
 /* Here's where the real grammar starts -- you'll need to add 
- * more rules here... Do not remove the 2%'s!! */
+ * more rules here... Do not remove the 2%'s!! 
+ */
 %%
 
 /* $1, $2, $3 matches the components of the LHS e.g., PLUS is $2 of exp PLUS exp */

@@ -1,5 +1,7 @@
 # Compiler Construction
 
+Implementing compiler features in OCaml.
+
 ## `ps0`: OCaml Warm Up
 
 Getting started with OCaml.
@@ -25,3 +27,11 @@ Given the specifications of Fish, implement a lexer and parser that generate a v
 We were given a choice between implementing the lexer/parser manually using a combinator-style approach, or using Lex (`ocamllex`) and Yacc (`ocamlyacc`). For this assignment, I used the latter.
 
 See `ps2/lex.mll` and `ps2/parse.mly` for the implementation details.
+
+## `ps3`: Fish → RISC-V
+
+Bridge `ps1` and `ps2` by taking a Fish AST and compiling it into RISC-V assembly.
+
+The tricky parts are generating fresh labels to use as jump targets for branches and loops, and working with a limited set of registers while making sure we don’t accidentally overwrite values we still need.
+
+See `compile.ml`.
