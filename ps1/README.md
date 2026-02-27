@@ -1,8 +1,6 @@
 # PS 1: RISC-V Simulator
 
-Points: 6
-
-Submit on gradescope: `riscv_sim.ml`
+Submit: `riscv_sim.ml`
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# PS 2: Parsing
+# PS 2: Lexer and Parser
 
 For this assignment, we were given a choice between implementing the lexer/parser manually using a combinator-style approach, or using Lex (`ocamllex`) and Yacc (`ocamlyacc`).
 

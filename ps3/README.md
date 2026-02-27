@@ -1,13 +1,37 @@
 # PS3: Fish → RISC-V
 
-6 points
-
-Submit on Gradescope: `compile.ml`
+Submit: `compile.ml`
 
 ## Notes
 
 A docker image (provided from class) is needed to simulate RISC-V,
 which I did not include here because the file size is too big.
+
+1. Build `ps3` via `make`.
+
+2. Generate RISC-V instructions for a given text file.
+
+```shell
+./ps3 test/01cexpr_01add.cish > tmp.s
+```
+
+3. Open docker daemon and generate binary (`a.out`).
+
+```shell
+sh ./docker-gcc.sh tmp.s 
+```
+
+4. Simulate instructions in a RISC-V container.
+
+```shell
+sh ./docker-qemu.sh a.out
+```
+
+5. Check what the program returned.
+
+```shell
+echo $?
+```
 
 ## Instructions
 
