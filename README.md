@@ -31,7 +31,7 @@ The simulator follows these steps in a loop:
 
 Implement a lexer and a parser for the Fish ("Fortran-ish") programming language.
 
-Given the specifications of Fish, implement a lexer and parser that generate a valid AST from raw input source.
+Given the specifications of Fish, implement a lexer and parser that generate a valid AST from Fish source.
 
 We were given a choice between implementing the lexer/parser manually using a combinator-style approach, or using Lex (`ocamllex`) and Yacc (`ocamlyacc`). For this assignment, I used the latter.
 
@@ -39,7 +39,7 @@ We were given a choice between implementing the lexer/parser manually using a co
 
 Bridge `ps1` and `ps2` by taking a Fish AST and compiling it into RISC-V assembly.
 
-The tricky parts are generating fresh labels to use as jump targets for branches and loops, and working with a limited set of registers while making sure we don’t accidentally overwrite values we still need.
+The tricky parts are generating labels to use as jump targets for branches and loops, and working with a limited set of registers while making sure we don’t accidentally overwrite values we still need.
 
 ## <a id="ps4"></a> `ps4`: Cish → RISC-V
 
@@ -49,6 +49,6 @@ In implementing function calls, we treat special registers like `sp` and `fp` as
 
 ## <a id="ps5"></a> `ps5`: Scish → Cish
 
-We move to a richer programming language, Scish (“Scheme-ish”). Scish is a functional programming language in which functions are first-class values. The main focus of PS5 is compiling closures.
+We move to a richer programming language, Scish (“Scheme-ish”). Scish is a functional programming language in which functions are first-class values. The main focus of PS5 is compiling closures. This requires dynamically allocating memory for environments and working with pointers to function bodies and environments.
 
-This requires dynamically allocating memory for environments and working with pointers to function bodies and environments.
+Instead of compiling directly to RISC-V, we take a Scish AST and translate it into a Cish AST. Since we already implemented a Cish → RISC-V compiler in `ps4`, this means a Scish source program can be compiled in two steps: Scish → Cish → RISC-V. A real compiler would not necessarily take this two-step approach.
