@@ -1,18 +1,19 @@
 # Compiler Construction
 
-Implementing compiler features in OCaml.
+This semester, I'm taking a course on Compilers where the problem sets involve incrementally building compiler features in OCaml.
 
-### Table of Contents:
+## Table of Contents
 
-- [`ps0`: OCaml Warm Up](#ps0)
-- [`ps1`: RISC-V Simulator](#ps1)
-- [`ps2`: Lexer and Parser](#ps2)
-- [`ps3`: Fortran-ish → RISC-V](#ps3)
-- [`ps4`: C-ish → RISC-V](#ps4)
+- [OCaml Warm Up](#ps0)
+- [RISC-V Simulator](#ps1)
+- [Lexer and Parser](#ps2)
+- [Fortran-ish → RISC-V](#ps3)
+- [C-ish → RISC-V](#ps4)
+- [Scheme-ish → C-ish](#ps5)
 
 ## <a id="ps0"></a> `ps0`: OCaml Warm Up
 
-Getting familiar with OCaml.
+Getting started with OCaml.
 
 ## <a id="ps1"></a> `ps1`: RISC-V Simulator
 
@@ -22,7 +23,7 @@ The simulator follows these steps in a loop:
 
 1. **Fetch**: Reads a 32-bit binary instruction from memory at the location pointed to by the PC.
 
-2. **Decode**: Decodes the binary word to figure out which instruction it is (like `Add` or `Beq`) and extracts the immediates needed.
+2. **Decode**: Decodes the binary word to figure out which instruction it is (like `Add` or `Beq`) and extracts immediates.
 
 3. **Execute**: Updates the CPU state (registers, PC) based on the instruction.
 
@@ -45,3 +46,9 @@ The tricky parts are generating fresh labels to use as jump targets for branches
 Fish has served us well, but it’s time to tackle a slightly more complex programming language. Cish (“C-ish”) is the next step-up from Fish that adds functions, function calls, and local variables.
 
 In implementing function calls, we treat special registers like `sp` and `fp` as anchors and use them as references to store function arguments and local variables at precomputed offsets.
+
+## <a id="ps5"></a> `ps5`: Scish → Cish
+
+We move to a richer programming language, Scish (“Scheme-ish”). Scish is a functional programming language in which functions are first-class values. The main focus of PS5 is compiling closures.
+
+This requires dynamically allocating memory for environments and working with pointers to function bodies and environments.
