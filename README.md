@@ -1,6 +1,6 @@
 # Compiler Construction
 
-This semester, I'm taking a course on Compilers where the problem sets involve incrementally building compiler features in OCaml.
+This semester, I'm taking a course on Compilers where the problem sets involve incrementally building compiler features in OCaml. Starter code was provided by Professor Sam Westrick and Joseph Tassarotti (NYU).
 
 ## Table of Contents
 
@@ -10,6 +10,7 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 - [Fortran-ish → RISC-V](#ps3)
 - [C-ish → RISC-V](#ps4)
 - [Scheme-ish → C-ish](#ps5)
+- [ML-ish → Scheme-ish](#ps6)
 
 ## <a id="ps0"></a> `ps0`: OCaml Warm Up
 
@@ -49,6 +50,8 @@ In implementing function calls, we treat special registers like `sp` and `fp` as
 
 ## <a id="ps5"></a> `ps5`: Scish → Cish
 
-We move to a richer programming language, Scish (“Scheme-ish”). Scish is a functional programming language in which functions are first-class values. The main focus of PS5 is compiling closures. This requires dynamically allocating memory for environments and working with pointers to function bodies and environments.
+We move to a richer programming language, Scish (“Scheme-ish”). Scish is a functional programming language in which functions are first-class values. The main focus of `ps5` is compiling closures. This requires dynamically allocating memory for environments and working with pointers to function bodies and environments.
 
 Instead of compiling directly to RISC-V, we take a Scish AST and translate it into a Cish AST. Since we already implemented a Cish → RISC-V compiler in `ps4`, this means a Scish source program can be compiled in two steps: Scish → Cish → RISC-V. A real compiler would not necessarily take this two-step approach.
+
+## <a id="ps6"></a> `ps6`: MLish → Scish
