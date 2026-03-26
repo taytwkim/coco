@@ -1,6 +1,10 @@
-# Compiler Construction
+<h1 align="center">Compiler Construction</h1>
 
 This semester, I'm taking a course on Compilers where the problem sets involve incrementally building compiler features in OCaml. Starter code was provided by Professor Sam Westrick and Joseph Tassarotti (NYU).
+
+## Study Notes
+
+- [Part 1](https://taytwkim.vercel.app/blog/compiler/000-coco-1/) (`ps1` ~ `ps4`)
 
 ## Table of Contents
 

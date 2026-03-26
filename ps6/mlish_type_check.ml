@@ -2,12 +2,70 @@ open Mlish_ast
 
 exception TypeError
 
-let type_error(s:string) = (print_endline s; raise TypeError)
+(* let type_error(s:string) = (print_endline s; raise TypeError) *)
 
+let type_error(s:string) = raise TypeError;
+
+(** tipe_scheme = Forall of (tvar list) * tipe
+
+    e.g., Forall of ['a], Arrow_t('a, 'a)
+
+    tipe_scheme is a wrapper for tipe with polymorphic tvars.
+
+    tipe -> generalize -> tipe_scheme
+    tipe_scheme -> instantiate -> tipe
+  *)
 type env = (var * tipe_scheme) list
 
 let guess () : tipe =
   Guess_t (ref None)
+
+(* makes fresh polymorphic variables like tvar0, tvar1, ... *)
+let tvar_counter = ref 0
+
+let fresh_tvar () : tvar =
+  let n = !tvar_counter in
+  tvar_counter := n + 1;
+  "tvar" ^ string_of_int n
+
+(** Why prune?
+
+    During unification, one guess may be linked to another guess.
+    For example:
+
+    r1 -> r2
+    r2 -> ?
+
+    This means we do not yet know the final type, but we do know that
+    [r1] and [r2] must stand for the same type.
+
+    Later, [r2] may be resolved further:
+
+    r1 -> r2
+    r2 -> int
+
+    In that case, [r1] should also be treated as [int].
+
+    [prune] follows these links to recover the current final type before
+    we compare or rewrite types.
+ *)
+
+let rec prune (t : tipe) : tipe =
+  match t with
+  | Guess_t ({ contents = Some t' } as r) ->
+      let t'' = prune t' in
+      r := Some t'';
+      t''
+  | _ -> t
+
+(********** UNIFY **********)
+
+(** (unify t1 t2) checks whether t1 and t2 can be made to mean the
+    same type.
+
+    While doing so, it may fill in unknown guesses or connect
+    an unknown guess to another.
+ *)
 
 let rec occur (r : tipe option ref) (t : tipe) : bool =
   match t with
@@ -26,23 +84,26 @@ let rec occur (r : tipe option ref) (t : tipe) : bool =
          | Some t' -> occur r t')
 
 let rec unify (t1 : tipe) (t2 : tipe) : bool =
+  let t1 = prune t1 in
+  let t2 = prune t2 in
   match t1, t2 with
   | Int_t, Int_t -> true
   | Bool_t, Bool_t -> true
   | Unit_t, Unit_t -> true
   | Tvar_t x, Tvar_t y -> x = y
 
+  (* A guess should always unify with itself. *)
+  | Guess_t r1, Guess_t r2 when r1 == r2 -> true
+
   (* left hand side is a guess *)
   | Guess_t r, t ->
       (match !r with
        | None ->
            if occur r t then false
-           else
-             (r := Some t;
-              true)
+           else (r := Some t; true)
        | Some t1' -> unify t1' t)
   
-  (* if guess is on right hand side, just swap the two *)
+  (* if guess is on right hand side, swap *)
   | t, Guess_t _ ->
       unify t2 t1
 
@@ -57,17 +118,22 @@ let rec unify (t1 : tipe) (t2 : tipe) : bool =
 
   | _ -> false
 
-(* makes a fresh type-variable name like "tvar0", "tvar1", ... *)
-let tvar_counter = ref 0
+(********** GENERALIZE **********)
 
-let fresh_tvar () : tvar =
-  let n = !tvar_counter in
-  tvar_counter := n + 1;
-  "tvar" ^ string_of_int n
+(** We generalize at a [let] binding.
 
-(* walks tipe and collects unresolved guesses that appear inside it*)
+    1. First, infer the type of the right-hand side. This may create fresh
+        guesses.
+
+    2. Then, replace the guesses that are local to that inferred type with
+        polymorphic type variables.
+
+    Guesses coming from the outer environment should not be generalized.
+ *)
+
+(* walks tipe and collects unresolved guesses that appear inside it *)
 let rec guesses_of_type (t : tipe) : tipe option ref list =
-  match t with
+  match prune t with
   | Int_t -> []
   | Bool_t -> []
   | Unit_t -> []
@@ -80,19 +146,20 @@ let rec guesses_of_type (t : tipe) : tipe option ref list =
        | None -> [r]
        | Some t' -> guesses_of_type t')
 
-(* takes a tipe scheme and collects guesses inside the underlying type t *)
+(* takes a tipe scheme, and collects guesses inside the underlying type *)
 let guesses_of_scheme (Forall (_, t) : tipe_scheme) : tipe option ref list =
   guesses_of_type t
 
-(* walks the whole env and collect guesses from each scheme *)
+(* walks the env and collect guesses from each scheme *)
 let guesses_of_env (env : env) : tipe option ref list =
   List.concat (List.map (fun (_, scheme) -> guesses_of_scheme scheme) env)
 
-(* find ref in the list of refs - the exact ref, not just a ref with the same value) *)
+(* helper used in diff *)
+(* find ref in the list of refs - the exact ref, not just a ref with the same value *)
 let mem_ref (r : tipe option ref) (rs : tipe option ref list) : bool =
   List.exists (fun r' -> r == r') rs
 
-(* guesses in the inferred type but not in the environment *)
+(* find guesses in the inferred type but not in env *)
 let rec diff (xs : tipe option ref list) (ys : tipe option ref list) : tipe option ref list =
   match xs with
   | [] -> []
@@ -100,9 +167,9 @@ let rec diff (xs : tipe option ref list) (ys : tipe option ref list) : tipe opti
       if mem_ref x ys then diff xs' ys
       else x :: diff xs' ys
 
-(* replaces chosen guess refs with fresh named type variables like Tvar_t "tvar0" *)
+(* replaces selected guesses with fresh tvars *)
 let rec substitute_guesses (subs : (tipe option ref * tvar) list) (t : tipe) : tipe =
-  match t with
+  match prune t with
   | Int_t -> Int_t
   | Bool_t -> Bool_t
   | Unit_t -> Unit_t
@@ -129,6 +196,18 @@ let generalize (env : env) (t : tipe) : tipe_scheme =
   let new_tipe = substitute_guesses fresh_tvs t in
   Forall (List.map snd fresh_tvs, new_tipe)
 
+(********** INSTANTIATE **********)
+
+(** We want to turn generic type variables like ['a] in a type such as
+    'a -> 'a into fresh guesses.
+
+    Those fresh guesses can later be resolved by unification.
+
+    To do this, generate a fresh guess for each tvar,
+    then call "substitute" to replace the type variables
+    with those guesses.
+ *)
+
 let rec substitute (subs : (tvar * tipe) list) (t : tipe) : tipe =
   match t with
   | Int_t -> Int_t
@@ -154,6 +233,7 @@ let lookup_env (x : var) (env : env) : tipe_scheme =
   | Some scheme -> scheme
   | None -> type_error ("unbound variable: " ^ x)
 
+(* wrapper that throws an error if unify fails *)
 let expect_unify (t1 : tipe) (t2 : tipe) (msg : string) : unit =
   if unify t1 t2 then ()
   else type_error msg
@@ -161,6 +241,10 @@ let expect_unify (t1 : tipe) (t2 : tipe) (msg : string) : unit =
 let rec tc (env : env) (e : Mlish_ast.exp) : tipe =
   match e with
   | (Var x, _) ->
+    (** For example, we look up something like:
+            x : Forall(['a], 'a -> 'a)
+            We instantiate with guesses so that it can be constrained.
+        *)
       instantiate (lookup_env x env)
 
   | (PrimApp (p, args), _) ->
@@ -226,6 +310,18 @@ let rec tc (env : env) (e : Mlish_ast.exp) : tipe =
            type_error "invalid primitive application")
 
   | (Fn (x, body), _) ->
+    
+    (** We are trying to type-check fun x -> body.
+        We don't know x yet, create a fresh guess.
+
+        Wrap the fresh guess as a tipe scheme with 
+        an empty tvar list, extend the env, and 
+        type-check the body.
+
+        In the end, the function has the type
+        arg_t -> body_t
+      *)
+
       let arg_t = guess () in
       let body_t = tc ((x, Forall ([], arg_t)) :: env) body in
       Fn_t (arg_t, body_t)
@@ -233,7 +329,7 @@ let rec tc (env : env) (e : Mlish_ast.exp) : tipe =
   | (App (e1, e2), _) ->
       let t1 = tc env e1 in
       let t2 = tc env e2 in
-      let tr = guess () in
+      let tr = guess () in (* a fresh guess for return type *)
       expect_unify t1 (Fn_t (t2, tr)) "expected function";
       tr
 
