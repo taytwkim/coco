@@ -17,8 +17,7 @@ let type_error(s:string) = raise TypeError;
   *)
 type env = (var * tipe_scheme) list
 
-let guess () : tipe =
-  Guess_t (ref None)
+let guess () : tipe = Guess_t (ref None)
 
 (* makes fresh polymorphic variables like tvar0, tvar1, ... *)
 let tvar_counter = ref 0
@@ -30,7 +29,7 @@ let fresh_tvar () : tvar =
 
 (** Why prune?
 
-    During unification, one guess may be linked to another guess.
+    During unification, a guess may be linked to another guess.
     For example:
 
     r1 -> r2
@@ -39,12 +38,12 @@ let fresh_tvar () : tvar =
     This means we do not yet know the final type, but we do know that
     [r1] and [r2] must stand for the same type.
 
-    Later, [r2] may be resolved further:
+    Later, [r2] may be resolved:
 
     r1 -> r2
     r2 -> int
 
-    In that case, [r1] should also be treated as [int].
+    In that case, [r1] should also be treated as an [int].
 
     [prune] follows these links to recover the current final type before
     we compare or rewrite types.
@@ -244,7 +243,7 @@ let rec tc (env : env) (e : Mlish_ast.exp) : tipe =
     (** For example, we look up something like:
             x : Forall(['a], 'a -> 'a)
             We instantiate with guesses so that it can be constrained.
-        *)
+     *)
       instantiate (lookup_env x env)
 
   | (PrimApp (p, args), _) ->
