@@ -2,21 +2,22 @@
 
 This semester, I'm taking a course on Compilers where the problem sets involve incrementally building compiler features in OCaml. Starter code was provided by Professor Sam Westrick and Joseph Tassarotti (NYU).
 
-## Study Notes
+## 📚 Study Notes
 
-- [Part 1](https://taytwkim.vercel.app/blog/compiler/000-coco-1/)
+- [Part 1: Assembly, Lexer, Parser, and Function Calls](https://taytwkim.vercel.app/blog/compiler/000-coco-1/)
+- [Part 2: Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/001-coco-2/)
 
-## Table of Contents
+## 🗂️ Table of Contents
 
 - [OCaml Warm Up](#ps0)
 - [RISC-V Simulator](#ps1)
 - [Lexer and Parser](#ps2)
 - [Fortran-ish → RISC-V](#ps3)
-- [C-ish → RISC-V](#ps4)
-- [Scheme-ish → C-ish](#ps5)
-- [ML-ish → Scheme-ish](#ps6)
+- [C-ish → RISC-V (Function Calls)](#ps4)
+- [Scheme-ish → C-ish (Closures)](#ps5)
+- [ML-ish → Scheme-ish (Type Inference)](#ps6)
 
-## Problem Sets
+## 🐪 Problem Sets
 
 ### <a id="ps0"></a> `ps0`: OCaml Warm Up
 
