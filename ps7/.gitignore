@@ -1,0 +1,6 @@
+*.cmo
+*.cmi
+cish_parse.ml
+cish_parse.mli
+cish_lex.ml
+ps7_cfg

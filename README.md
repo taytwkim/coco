@@ -16,8 +16,9 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 - [C-ish → RISC-V (Function Calls)](#ps4)
 - [Scheme-ish → C-ish (Closures)](#ps5)
 - [ML-ish → Scheme-ish (Type Inference)](#ps6)
+- [Control-flow Graph Analysis](#ps7)
 
-## 🐪 Problem Sets
+## 🐫 Problem Sets
 
 ### <a id="ps0"></a> `ps0`: OCaml Warm Up
 
@@ -41,7 +42,7 @@ Implement a lexer and a parser for the Fish ("Fortran-ish") programming language
 
 Given the specifications of Fish, implement a lexer and parser that generate a valid AST from Fish source.
 
-We were given a choice between implementing the lexer/parser manually using a combinator-style approach, or using Lex (`ocamllex`) and Yacc (`ocamlyacc`). For this assignment, I used the latter.
+We were given a choice between implementing the lexer/parser manually in a combinator-style approach, or using Lex (`ocamllex`) and Yacc (`ocamlyacc`). For this assignment, I used the latter.
 
 ### <a id="ps3"></a> `ps3`: Fish → RISC-V
 
@@ -66,3 +67,5 @@ Instead of compiling directly to RISC-V, we take a Scish AST and translate it in
 We implement a compiler for an ML-ish programming language. As in `ps5`, instead of targeting RISC-V, we compile to a higher-level representation (Scish).
 
 MLish is fairly similar to Scish, but we add another layer of complexity. In addition to compilation, we also type-check/type-infer the given ML program. The difficult part is implementing core set of operations such as `unify`, `generalize`, and `initialize`.
+
+### <a id="ps7"></a> `ps7`: Control-flow Graph Analysis
