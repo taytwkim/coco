@@ -1,6 +1,6 @@
 <h1 align="center">Compiler Construction</h1>
 
-This semester, I'm taking a course on Compilers where the problem sets involve incrementally building compiler features in OCaml. Starter code was provided by Professor Sam Westrick and Joseph Tassarotti (NYU).
+This semester, I'm taking a course on Compilers where the problem sets involve incrementally building compiler features in OCaml. Starters were provided by Professor Sam Westrick (NYU).
 
 ## 📚 Study Notes
 
@@ -64,7 +64,7 @@ Instead of compiling directly to RISC-V, we take a Scish AST and translate it in
 
 ### <a id="ps6"></a> `ps6`: MLish → Scish
 
-We implement a compiler for an ML-ish programming language. As in `ps5`, instead of targeting RISC-V, we compile to a higher-level representation (Scish).
+We implement a compiler for an "ML-ish" programming language. As in `ps5`, instead of targeting RISC-V, we compile to a higher-level representation (Scish).
 
 MLish is fairly similar to Scish, but we add another layer of complexity. In addition to compilation, we also type-check/type-infer the given ML program. The difficult part is implementing core set of operations such as `unify`, `generalize`, and `initialize`.
 

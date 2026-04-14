@@ -4,7 +4,6 @@
  * whether two temps have conflicting live ranges.
  *)
 
-
 module C = Cish_ast
 type var = string
 type label = string
@@ -30,10 +29,10 @@ type arithop = Plus | Minus | Times | Div
  * support for using temps as operands. *)
 type inst = 
   Label of label
-| Move of operand * operand                     (* x := y *)
-| Arith of operand * operand * arithop * operand (* x := y + z *)
-| Load of operand * operand * int               (* x := *(y+i) *)
-| Store of operand * int * operand              (* *(x+i) := y *)
+| Move of operand * operand                         (* x := y *)
+| Arith of operand * operand * arithop * operand    (* x := y + z *)
+| Load of operand * operand * int                   (* x := *(y+i) *)
+| Store of operand * int * operand                  (* *(x+i) := y *)
 | Call of operand * int
   (* invoke f with n arguments; we track n to know what registers are used in call *)
 | Jump of label  (* j L *)
