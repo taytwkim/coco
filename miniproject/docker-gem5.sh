@@ -1,0 +1,1 @@
+sudo docker run --platform linux/amd64 --rm -v `pwd`/:/build/ csci-ga-2130/gem5-runner:latest bash -c "source ~/.profile; mkdir /tmp/m5out/; cd /build/; /gem5/build/RISCV/gem5.fast --outdir=/tmp/m5out /home/ubuntu/simple.py $@ > /tmp/out.txt 2>/tmp/err.txt; sudo cp /tmp/m5out/stats.txt /build/; tail -n 1 /tmp/out.txt"

@@ -1,0 +1,13 @@
+sqrt(n, iter, start) {
+  let i = 0;
+  let cur = start; {
+  for(i = 0; i < iter; i = i + 1) {
+    cur = (cur + n / cur) / 2;
+  }
+  return cur;
+  }
+}
+
+main() {
+  return sqrt(57601, 8, 10);
+}

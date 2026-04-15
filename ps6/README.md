@@ -1,6 +1,6 @@
 # PS6: MLish → Scish
 
-Submit on Gradescope: `mlish_type_check.ml`, `mlish_compile.ml`
+Submit: `mlish_type_check.ml`, `mlish_compile.ml`
 
 ---------------------
 

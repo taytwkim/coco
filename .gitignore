@@ -15,6 +15,7 @@
 *.lib
 *.exe
 *.out
+!ps7/sample/*.out
 
 # OCamlbuild and Dune build artifacts
 _build/

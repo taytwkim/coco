@@ -28,8 +28,8 @@ module NodeSet = Set.Make(IGraphNode)
 let call_gen_list = ["x10";"x11";"x12";"x13";"x14";"x15";"x16";"x17";]
 let call_kill_list = ["x1";"x5";"x6";"x7";"x10";"x11";"x12";"x13";"x14";"x15";"x16";"x17";"x28";"x29";"x30";"x31"]
 
-(* Undirected graphs where nodes are identified by igraph_node type above. Look at
-   graph.ml for the interface description.  *)
+(* Undirected graphs where nodes are identified by igraph_node type above. 
+  Look at graph.ml for the interface description.  *)
 
 module IUGraph = Graph.UndirectedGraph(IGraphNode)
 

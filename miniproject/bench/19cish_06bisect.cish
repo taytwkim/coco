@@ -1,0 +1,25 @@
+bisect(n, lo, hi) {
+  let cur = 0;
+  let quad = 0; {
+  while(hi - lo > 1) {
+    cur = (hi + lo) / 2;
+    quad = (cur * cur) * (cur * cur);
+    if (quad == n) {
+       return cur;
+    }
+    else {
+       if (quad > n) {
+           hi = cur;
+       }
+       else {
+           lo = cur;
+       }
+    }
+  }
+  return lo;
+  }
+}
+
+main() {
+  return bisect(65537, 0, 80);
+}

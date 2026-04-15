@@ -6,8 +6,12 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 
 - [Part 1: Assembly, Lexer, Parser, and Function Calls](https://taytwkim.vercel.app/blog/compiler/000-coco-1/)
 - [Part 2: Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/001-coco-2/)
+- [Part 3: A-Normal Form and Compiler Optimizations]()
+- [Part 4: Liveness Analysis on a Control Flow Graph]()
 
-## 🗂️ Table of Contents
+## 🐫 Problem Sets
+
+### 🗂️ Table of Contents
 
 - [OCaml Warm Up](#ps0)
 - [RISC-V Simulator](#ps1)
@@ -17,8 +21,6 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 - [Scheme-ish → C-ish (Closures)](#ps5)
 - [ML-ish → Scheme-ish (Type Inference)](#ps6)
 - [Control-flow Graph Analysis](#ps7)
-
-## 🐫 Problem Sets
 
 ### <a id="ps0"></a> `ps0`: OCaml Warm Up
 
@@ -69,3 +71,7 @@ We implement a compiler for an "ML-ish" programming language. As in `ps5`, inste
 MLish is fairly similar to Scish, but we add another layer of complexity. In addition to compilation, we also type-check/type-infer the given ML program. The difficult part is implementing core set of operations such as `unify`, `generalize`, and `initialize`.
 
 ### <a id="ps7"></a> `ps7`: Control-flow Graph Analysis
+
+Until now, we were mostly concerned with the correctness of our compiler. From this point on, we start thinking about optimizations.
+
+The goal of PS7 was to run a liveness analysis on a CFG, then use the computed `LiveIn` and `LiveOut` to build an interference graph. The mini project uses the interference graph constructed in here to implement register allocation.

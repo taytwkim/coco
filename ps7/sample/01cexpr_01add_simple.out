@@ -1,0 +1,30 @@
+Omitting callee-saved register handling
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12+4
+$x10 := t0
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+{
+  $x9	: {$x10,t0}
+  $x10	: {$x9,$x18,$x19,$x20,$x21,$x22,$x23,$x24,$x25,$x26,$x27}
+  $x18	: {$x10,t0}
+  $x19	: {$x10,t0}
+  $x20	: {$x10,t0}
+  $x21	: {$x10,t0}
+  $x22	: {$x10,t0}
+  $x23	: {$x10,t0}
+  $x24	: {$x10,t0}
+  $x25	: {$x10,t0}
+  $x26	: {$x10,t0}
+  $x27	: {$x10,t0}
+  t0	: {$x9,$x18,$x19,$x20,$x21,$x22,$x23,$x24,$x25,$x26,$x27}
+}
