@@ -4,10 +4,10 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 
 ## 📚 Study Notes
 
-- [Part 1: Assembly, Lexer, Parser, and Function Calls](https://taytwkim.vercel.app/blog/compiler/000-coco-1/)
-- [Part 2: Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/001-coco-2/)
-- [Part 3: A-Normal Form and Compiler Optimizations]()
-- [Part 4: Liveness Analysis on a Control Flow Graph]()
+- [Part 1: Assembly, Lexer, Parser, and Function Calls](https://taytwkim.vercel.app/blog/compiler/000-coco1/)
+- [Part 2: Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/001-coco2/)
+- [Part 3: A-Normal Form and Compiler Optimizations](https://taytwkim.vercel.app/blog/compiler/002-coco3/)
+- [Part 4: Data Flow Analysis on a Control Flow Graph](https://taytwkim.vercel.app/blog/compiler/003-coco4/)
 
 ## 🐫 Problem Sets
 
