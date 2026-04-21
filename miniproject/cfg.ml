@@ -62,7 +62,6 @@ let string_of_igraph (g: interfere_graph) : string =
 
 
 (*******************************************************************)
-(* PS7 TODO:  interference graph construction *)
 
 (* convert a valid cfg operand into an igraph node *)
 let igraph_node_of_cfg_operand (op : operand) : igraph_node option =

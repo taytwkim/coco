@@ -59,9 +59,7 @@ let string_of_igraph (g: interfere_graph) : string =
   let rows = String.concat "\n" (List.map string_of_row (NodeSet.elements (IUGraph.nodes g))) in
   Printf.sprintf "{\n%s\n}\n" rows
 
-
 (*******************************************************************)
-(* PS7 TODO: interference graph construction *)
 
 (* convert a valid cfg operand into an igraph node *)
 let igraph_node_of_cfg_operand (op : operand) : igraph_node option =

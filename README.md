@@ -21,7 +21,7 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 - [Scheme-ish → C-ish (Closures)](#ps5)
 - [ML-ish → Scheme-ish (Type Inference)](#ps6)
 - [Control-flow Graph Analysis](#ps7)
-- [Register Allocation](#mini-project)
+- [Compiler Optimization: Register Allocation](#mini-project)
 
 ### <a id="ps0"></a> `ps0`: OCaml Warm Up
 
@@ -77,4 +77,6 @@ Until now, we were mostly concerned with the correctness of our compiler. From t
 
 The goal of PS7 is to run a liveness analysis on a CFG, then use the computed `LiveIn` and `LiveOut` table to build an interference graph. The mini project uses the interference graph constructed here to implement register allocation, a common optimization technique.
 
-### <a id="mini-project"></a> `ps7`: Register Allocation
+### <a id="mini-project"></a> `Mini Project`: Register Allocation
+
+The goal of the mini project is to optimize our compiler by implementing register allocation. Using the interference graph from `ps7`, we assign registers to temporary variables so that interfering values are never placed in the same register. When register pressure is too high (that is, too many temporaries interfere at the same time), some temporaries must be spilled to the stack, which adds expensive memory accesses. The main objective is therefore to minimize spills and improve execution time over the `ps4` baseline.
