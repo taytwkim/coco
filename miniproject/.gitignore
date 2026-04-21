@@ -1,0 +1,4 @@
+csci-ga-2130-gem5-docker
+*.out
+*.s
+stats.txt

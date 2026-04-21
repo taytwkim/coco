@@ -31,4 +31,4 @@ cfg: riscv cish
 	$(COMPILER) -o proj cish_ast.cmo cish_lex.cmo cish_parse.cmo word32.cmo riscv.cmo cfg_ast.cmo graph.cmo spill.cmo cfg.cmo cfg_compile.ml cish_compile.cmo main.cmo
 
 clean:
-	-rm *.cmo *.cmi proj cish_parse.ml cish_parse.mli cish_lex.ml 
+	-rm *.cmo *.cmi *.out *.s stats.txt proj cish_parse.ml cish_parse.mli cish_lex.ml 

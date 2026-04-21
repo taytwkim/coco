@@ -92,6 +92,7 @@ let inst2riscv (i:CG.inst) : Riscv.inst list=
         | CG.Gte -> M.Bge (r1,r2,l1)
         )::[M.J l2])
   | CG.Return -> [M.jr M.R1]
+
 let block2riscv (b: CG.block) : Riscv.inst list=
   List.fold_right (fun i il -> List.append (inst2riscv i) il) b []
 

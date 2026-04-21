@@ -70,13 +70,13 @@ let igraph_node_of_cfg_operand (op : operand) : igraph_node option =
   | Reg r -> Some (RegNode r)
   | Int _ | Lab _ -> None   (* integer constants and labels are not nodes in the interference graph *)
 
-(* if cfg operand can be converted to an igraph node, add to a set *)
+(* if cfg operand can be converted to an igraph node, convert and add to the set *)
 let add_cfg_operand_to_igraph_node_set (op : operand) (s : NodeSet.t) : NodeSet.t =
   match igraph_node_of_cfg_operand op with
   | Some n -> NodeSet.add n s
   | None -> s
 
-(* given a list of cfg operands, convert valid cfg operands add to one set *)
+(* given a list of cfg operands, convert valid cfg operands and add to one set *)
 let igraph_node_set_of_cfg_operands (ops : operand list) : NodeSet.t =
   List.fold_left
     (fun acc op -> add_cfg_operand_to_igraph_node_set op acc)

@@ -14,7 +14,6 @@ let new_spill_temp () = (
   "st"^(string_of_int (!spillcount))
 )
 
-
 let spill_var_inst (i:CG.inst) (sl:var list) (v:var) : CG.inst list =
   (*First rewrite any defs*)
   let (i_after_def_rewrite,storeinst) =

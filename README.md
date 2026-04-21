@@ -21,6 +21,7 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 - [Scheme-ish → C-ish (Closures)](#ps5)
 - [ML-ish → Scheme-ish (Type Inference)](#ps6)
 - [Control-flow Graph Analysis](#ps7)
+- [Register Allocation](#mini-project)
 
 ### <a id="ps0"></a> `ps0`: OCaml Warm Up
 
@@ -74,4 +75,6 @@ MLish is fairly similar to Scish, but we add another layer of complexity. In add
 
 Until now, we were mostly concerned with the correctness of our compiler. From this point on, we start thinking about optimizations.
 
-The goal of PS7 was to run a liveness analysis on a CFG, then use the computed `LiveIn` and `LiveOut` to build an interference graph. The mini project uses the interference graph constructed in here to implement register allocation.
+The goal of PS7 is to run a liveness analysis on a CFG, then use the computed `LiveIn` and `LiveOut` table to build an interference graph. The mini project uses the interference graph constructed here to implement register allocation, a common optimization technique.
+
+### <a id="mini-project"></a> `ps7`: Register Allocation
