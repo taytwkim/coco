@@ -23,8 +23,6 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 - [Control-flow Graph Analysis](#ps7)
 - [Compiler Optimization (Register Allocation)](#mini-project)
 
----
-
 ### <a id="ps0"></a> `ps0`: OCaml Warm Up
 
 Getting started with OCaml.

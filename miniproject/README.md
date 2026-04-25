@@ -1,7 +1,7 @@
 # Mini Project
 
 For this assignment, we revisit the task of compiling Cish to RISC-V
-that we originally completed in Problem Set 4, but this time our goal
+that we originally completed in `ps4`, but this time our goal
 is to produce much higher performing RISC-V output.
 
 Specifically, your task is to implement the function `compile` in
@@ -36,14 +36,14 @@ operations take, such as completing an instruction, accessing a piece
 of memory, etc.
 
 We'll use the gem5 simulator, which is widely used in
-computer architecture research. Gem5 allows you to simulate a wide
+computer architecture research. gem5 allows you to simulate a wide
 range of potential computer organizations with different performance
 characteristics. For simplicity, we'll be using a simulated machine
 with the following characteristics:
 
-(1) Simple in-order CPU with a 2 Ghz clock cycle
-(2) A memory cache for instructions (icache), no cache for data
-(3) 512 MB of DDR3 RAM
+1. Simple in-order CPU with a 2 Ghz clock cycle
+2. A memory cache for instructions (icache), no cache for data
+3. 512 MB of DDR3 RAM
 
 The exact details of this machine are not too important, but more or
 less the important thing to keep in mind is that because it does not
@@ -134,7 +134,7 @@ generated program for a benchmark is incorrect, it is given a maximum
 score (so essentially it will be dropped when computing the top 4 or
 top 5).
 
-** IMPORTANT: ** Note that these are "minimum guaranteed" scores for the
+**IMPORTANT:** Note that these are "minimum guaranteed" scores for the
 project component of the grade. I reserve the right to curve these
 scores up, but I will not curve this score down (except for cases of
 academic dishonesty, exploiting a bug in the grader, etc.)
