@@ -6,14 +6,13 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 
 - [Part 1: Assembly, Lexer, Parser, and Function Calls](https://taytwkim.vercel.app/blog/compiler/000-coco1/)
 - [Part 2: Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/001-coco2/)
-- [Part 3: A-Normal Form and Compiler Optimizations](https://taytwkim.vercel.app/blog/compiler/002-coco3/)
-- [Part 4: Data Flow Analysis on a Control Flow Graph](https://taytwkim.vercel.app/blog/compiler/003-coco4/)
+- [Part 3: A-Normal Form and Optimizations](https://taytwkim.vercel.app/blog/compiler/002-coco3/)
+- [Part 4: Data-flow Analysis on a Control-flow Graph](https://taytwkim.vercel.app/blog/compiler/003-coco4/)
 
 ## 🐫 Problem Sets
 
 ### 🗂️ Table of Contents
 
-- [OCaml Warm Up](#ps0)
 - [RISC-V Simulator](#ps1)
 - [Lexer and Parser](#ps2)
 - [Fortran-ish → RISC-V](#ps3)
@@ -21,11 +20,7 @@ This semester, I'm taking a course on Compilers where the problem sets involve i
 - [Scheme-ish → C-ish (Closures)](#ps5)
 - [ML-ish → Scheme-ish (Type Inference)](#ps6)
 - [Control-flow Graph Analysis](#ps7)
-- [Compiler Optimization (Register Allocation)](#mini-project)
-
-### <a id="ps0"></a> `ps0`: OCaml Warm Up
-
-Getting started with OCaml.
+- [Register Allocation](#mini-project)
 
 ### <a id="ps1"></a> `ps1`: RISC-V Simulator
 
@@ -73,12 +68,12 @@ MLish is fairly similar to Scish, but we add another layer of complexity. In add
 
 ### <a id="ps7"></a> `ps7`: Control-flow Graph Analysis
 
-Until now, we were mostly concerned with the correctness of our compiler. From this point on, we start thinking about optimizations.
+Until now, we were mostly concerned with the correctness of our compiler. From this point on, we start thinking about optimizations (generating performant RISC-V instructions).
 
-The goal of PS7 is to run a liveness analysis on a CFG, then use the computed `LiveIn` and `LiveOut` table to build an interference graph. The mini project uses the interference graph constructed here to implement register allocation, a common optimization technique.
+The goal of `ps7` is to run a liveness analysis on a CFG, then use the computed `LiveIn` and `LiveOut` table to build an interference graph. The mini project uses the interference graph constructed here to implement register allocation, a common optimization technique.
 
 ### <a id="mini-project"></a> `mini project`: Register Allocation
 
-The goal of the mini project is to optimize our compiler by implementing register allocation. Using the interference graph from `ps7`, we assign registers to temporary variables so that interfering values are never placed in the same register. 
+The goal of the mini project is to optimize our compiler by implementing register allocation. Using the interference graph from `ps7`, we assign registers to temporary variables so that interfering values are not placed in the same register. 
 
-When register pressure is too high (too many temporaries interfere at the same time), some temporaries must be spilled to the stack, which adds expensive memory accesses. The main objective is therefore to minimize spills and improve execution time over the `ps4` baseline.
+When register pressure is too high (too many temporaries interfere at the same time), some temporaries must be spilled to the stack, which adds expensive memory accesses. The main objective is to minimize spills and improve execution time compared to the `ps4` baseline.

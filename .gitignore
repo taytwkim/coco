@@ -58,3 +58,6 @@ _coverage/
 
 # Docker Image
 csci-ga-2130-docker/
+
+# Warm Up
+ps0/
