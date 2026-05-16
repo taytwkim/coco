@@ -1,0 +1,59 @@
+Grading test01.scish
+
+Solution: answer = 45
+Submission: answer = 45
+-- Passed! --
+
+Grading test02.scish
+
+Solution: answer = 10
+Submission: answer = 10
+-- Passed! --
+
+Grading test03.scish
+
+Solution: answer = 9
+Submission: answer = 9
+-- Passed! --
+
+Grading test04.scish
+
+Solution: answer = 90
+Submission: answer = 90
+-- Passed! --
+
+Grading test05.scish
+
+Solution: answer = 2
+Submission: answer = 2
+-- Passed! --
+
+Grading test06.scish
+
+Solution: answer = 3
+Submission: answer = 3
+-- Passed! --
+
+Grading test07.scish
+
+Solution: answer = 9
+Submission: answer = 9
+-- Passed! --
+
+Grading test08.scish
+
+Solution: answer = 120
+Submission: answer = 120
+-- Passed! --
+
+Grading test09.scish
+
+Solution: answer = 6
+Submission: answer = 6
+-- Passed! --
+
+Grading test10.scish
+
+Solution: answer = 6
+Submission: answer = 6
+-- Passed! --

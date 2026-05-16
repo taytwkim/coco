@@ -1,0 +1,83 @@
+Grading 10fish_01gcd.cish
+Solution: 37
+Submission: 37
+Baseline Timing: 65925500
+Submission Timing: 7648000
+Normalized Timing: 0.116009738265
+-- Passed! --
+
+Grading 10fish_02sqrt.cish
+Solution: 240
+Submission: 240
+Baseline Timing: 12458000
+Submission Timing: 6940500
+Normalized Timing: 0.55711189597
+-- Passed! --
+
+Grading 10fish_03bisect.cish
+Solution: 16
+Submission: 16
+Baseline Timing: 14899500
+Submission Timing: 6865000
+Normalized Timing: 0.460753716568
+-- Passed! --
+
+Grading 19cish_01fact.cish
+Solution: 30
+Submission: 30
+Baseline Timing: 12316000
+Submission Timing: 10030000
+Normalized Timing: 0.814387788243
+-- Passed! --
+
+Grading 19cish_02adder.cish
+Solution: 5
+Submission: 5
+Baseline Timing: 16390000
+Submission Timing: 7789000
+Normalized Timing: 0.475228798048
+-- Passed! --
+
+Grading 19cish_03fibo.cish
+Solution: 89
+Submission: 89
+Baseline Timing: 151702000
+Submission Timing: 99941000
+Normalized Timing: 0.658798170097
+-- Passed! --
+
+Grading 19cish_04gcd.cish
+Solution: 37
+Submission: 37
+Baseline Timing: 65735500
+Submission Timing: 8607000
+Normalized Timing: 0.130933818104
+-- Passed! --
+
+Grading 19cish_05sqrt.cish
+Solution: 240
+Submission: 240
+Baseline Timing: 12952000
+Submission Timing: 7072500
+Normalized Timing: 0.546054663372
+-- Passed! --
+
+Grading 19cish_06bisect.cish
+Solution: 16
+Submission: 16
+Baseline Timing: 15421500
+Submission Timing: 7224500
+Normalized Timing: 0.468469344746
+-- Passed! --
+
+Final timing average:
+Best 1: 0.116009738265
+Best 2: 0.123246087031
+Best 3: 0.191280945039
+Best 4: 0.239289738937
+Best 5: 0.274485754995
+Best 6: 0.307826399319
+Best 7: 0.335051129705
+Best 8: 0.364599651163
+Best 9: 0.398653603111
+Max points: 100

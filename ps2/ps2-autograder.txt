@@ -1,0 +1,288 @@
+Using method Yacc as it received more points.
+
+Grading 01cexpr_01add.fish
+Solution:
+answer = 16
+Yacc:
+answer = 16
+-- Passed! --
+
+Grading 01cexpr_02sub.fish
+Solution:
+answer = 8
+Yacc:
+answer = 8
+-- Passed! --
+
+Grading 01cexpr_03mul.fish
+Solution:
+answer = 48
+Yacc:
+answer = 48
+-- Passed! --
+
+Grading 01cexpr_04div.fish
+Solution:
+answer = 3
+Yacc:
+answer = 3
+-- Passed! --
+
+Grading 01cexpr_05eq.fish
+Solution:
+answer = 2
+Yacc:
+answer = 2
+-- Passed! --
+
+Grading 01cexpr_06neq.fish
+Solution:
+answer = 5
+Yacc:
+answer = 5
+-- Passed! --
+
+Grading 01cexpr_07gt.fish
+Solution:
+answer = 1
+Yacc:
+answer = 1
+-- Passed! --
+
+Grading 01cexpr_08gte.fish
+Solution:
+answer = 3
+Yacc:
+answer = 3
+-- Passed! --
+
+Grading 01cexpr_09lt.fish
+Solution:
+answer = 4
+Yacc:
+answer = 4
+-- Passed! --
+
+Grading 01cexpr_10lte.fish
+Solution:
+answer = 6
+Yacc:
+answer = 6
+-- Passed! --
+
+Grading 01cexpr_11uminus.fish
+Solution:
+answer = -12
+Yacc:
+answer = -12
+-- Passed! --
+
+Grading 01cexpr_12not.fish
+Solution:
+answer = 0
+Yacc:
+answer = 0
+-- Passed! --
+
+Grading 01cexpr_13and.fish
+Solution:
+answer = 0
+Yacc:
+answer = 0
+-- Passed! --
+
+Grading 01cexpr_14or.fish
+Solution:
+answer = 1
+Yacc:
+answer = 1
+-- Passed! --
+
+Grading 01cexpr_15bigcon.fish
+Solution:
+answer = 250000
+Yacc:
+answer = 250000
+-- Passed! --
+
+Grading 01cexpr_16bigcon.fish
+Solution:
+answer = 50000
+Yacc:
+answer = 50000
+-- Passed! --
+
+Grading 02vexpr_01add.fish
+Solution:
+answer = 16
+Yacc:
+answer = 16
+-- Passed! --
+
+Grading 02vexpr_02sub.fish
+Solution:
+answer = 8
+Yacc:
+answer = 8
+-- Passed! --
+
+Grading 02vexpr_03mul.fish
+Solution:
+answer = 48
+Yacc:
+answer = 48
+-- Passed! --
+
+Grading 02vexpr_04div.fish
+Solution:
+answer = 3
+Yacc:
+answer = 3
+-- Passed! --
+
+Grading 02vexpr_05eq.fish
+Solution:
+answer = 0
+Yacc:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_06neq.fish
+Solution:
+answer = 1
+Yacc:
+answer = 1
+-- Passed! --
+
+Grading 02vexpr_07gt.fish
+Solution:
+answer = 1
+Yacc:
+answer = 1
+-- Passed! --
+
+Grading 02vexpr_08gte.fish
+Solution:
+answer = 1
+Yacc:
+answer = 1
+-- Passed! --
+
+Grading 02vexpr_09lt.fish
+Solution:
+answer = 0
+Yacc:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_10lte.fish
+Solution:
+answer = 0
+Yacc:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_11uminus.fish
+Solution:
+answer = -12
+Yacc:
+answer = -12
+-- Passed! --
+
+Grading 02vexpr_12not.fish
+Solution:
+answer = 0
+Yacc:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_13and.fish
+Solution:
+answer = 0
+Yacc:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_14or.fish
+Solution:
+answer = 1
+Yacc:
+answer = 1
+-- Passed! --
+
+Grading 02vexpr_15assignval.fish
+Solution:
+answer = 2
+Yacc:
+answer = 2
+-- Passed! --
+
+Grading 03stmt_01if.fish
+Solution:
+answer = 5
+Yacc:
+answer = 5
+-- Passed! --
+
+Grading 03stmt_02if.fish
+Solution:
+answer = 10
+Yacc:
+answer = 10
+-- Passed! --
+
+Grading 03stmt_03while.fish
+Solution:
+answer = 45
+Yacc:
+answer = 45
+-- Passed! --
+
+Grading 03stmt_04for.fish
+Solution:
+answer = 55
+Yacc:
+answer = 55
+-- Passed! --
+
+Grading 03stmt_05if.fish
+Solution:
+answer = 7
+Yacc:
+answer = 7
+-- Passed! --
+
+Grading 03stmt_06for.fish
+Solution:
+answer = 715
+Yacc:
+answer = 715
+-- Passed! --
+
+Grading 04opt_01cfoldif.fish
+Solution:
+answer = 3
+Yacc:
+answer = 3
+-- Passed! --
+
+Grading 04opt_02cfoldif.fish
+Solution:
+answer = 5
+Yacc:
+answer = 5
+-- Passed! --
+
+Grading 09all_01adder.fish
+Solution:
+answer = 5
+Yacc:
+answer = 5
+-- Passed! --
+
+Grading 09all_02fibo.fish
+Solution:
+answer = 1597
+Yacc:
+answer = 1597
+-- Passed! --

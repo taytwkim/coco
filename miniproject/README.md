@@ -41,7 +41,7 @@ range of potential computer organizations with different performance
 characteristics. For simplicity, we'll be using a simulated machine
 with the following characteristics:
 
-1. Simple in-order CPU with a 2 Ghz clock cycle
+1. Simple in-order CPU with a 2 GHz clock cycle
 2. A memory cache for instructions (icache), no cache for data
 3. 512 MB of DDR3 RAM
 

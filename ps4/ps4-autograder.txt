@@ -1,0 +1,234 @@
+Grading 01cexpr_03mul.cish
+Solution: 48
+Submission: 48
+-- Passed! --
+
+Grading 01cexpr_04div.cish
+Solution: 3
+Submission: 3
+-- Passed! --
+
+Grading 01cexpr_05eq.cish
+Solution: 2
+Submission: 2
+-- Passed! --
+
+Grading 01cexpr_06neq.cish
+Solution: 5
+Submission: 5
+-- Passed! --
+
+Grading 01cexpr_07gt.cish
+Solution: 1
+Submission: 1
+-- Passed! --
+
+Grading 01cexpr_08gte.cish
+Solution: 3
+Submission: 3
+-- Passed! --
+
+Grading 01cexpr_09lt.cish
+Solution: 4
+Submission: 4
+-- Passed! --
+
+Grading 01cexpr_10lte.cish
+Solution: 6
+Submission: 6
+-- Passed! --
+
+Grading 01cexpr_11uminus.cish
+Solution: 3
+Submission: 3
+-- Passed! --
+
+Grading 01cexpr_12not.cish
+Solution: 0
+Submission: 0
+-- Passed! --
+
+Grading 01cexpr_13and.cish
+Solution: 0
+Submission: 0
+-- Passed! --
+
+Grading 01cexpr_14or.cish
+Solution: 1
+Submission: 1
+-- Passed! --
+
+Grading 01cexpr_15bigcon.cish
+Solution: 100
+Submission: 100
+-- Passed! --
+
+Grading 01cexpr_16bigcon.cish
+Solution: 10
+Submission: 10
+-- Passed! --
+
+Grading 02vexpr_01add.cish
+Solution: 16
+Submission: 16
+-- Passed! --
+
+Grading 02vexpr_02sub.cish
+Solution: 8
+Submission: 8
+-- Passed! --
+
+Grading 02vexpr_03mul.cish
+Solution: 48
+Submission: 48
+-- Passed! --
+
+Grading 02vexpr_04div.cish
+Solution: 3
+Submission: 3
+-- Passed! --
+
+Grading 02vexpr_05eq.cish
+Solution: 0
+Submission: 0
+-- Passed! --
+
+Grading 02vexpr_06neq.cish
+Solution: 1
+Submission: 1
+-- Passed! --
+
+Grading 02vexpr_07gt.cish
+Solution: 1
+Submission: 1
+-- Passed! --
+
+Grading 02vexpr_08gte.cish
+Solution: 1
+Submission: 1
+-- Passed! --
+
+Grading 02vexpr_09lt.cish
+Solution: 0
+Submission: 0
+-- Passed! --
+
+Grading 02vexpr_10lte.cish
+Solution: 0
+Submission: 0
+-- Passed! --
+
+Grading 02vexpr_11uminus.cish
+Solution: 12
+Submission: 12
+-- Passed! --
+
+Grading 02vexpr_12not.cish
+Solution: 0
+Submission: 0
+-- Passed! --
+
+Grading 02vexpr_13and.cish
+Solution: 0
+Submission: 0
+-- Passed! --
+
+Grading 02vexpr_14or.cish
+Solution: 1
+Submission: 1
+-- Passed! --
+
+Grading 02vexpr_15assignval.cish
+Solution: 2
+Submission: 2
+-- Passed! --
+
+Grading 03stmt_01if.cish
+Solution: 5
+Submission: 5
+-- Passed! --
+
+Grading 03stmt_02if.cish
+Solution: 10
+Submission: 10
+-- Passed! --
+
+Grading 03stmt_03while.cish
+Solution: 45
+Submission: 45
+-- Passed! --
+
+Grading 03stmt_04for.cish
+Solution: 55
+Submission: 55
+-- Passed! --
+
+Grading 03stmt_05if.cish
+Solution: 7
+Submission: 7
+-- Passed! --
+
+Grading 03stmt_06for.cish
+Solution: 115
+Submission: 115
+-- Passed! --
+
+Grading 09fish_01adder.cish
+Solution: 5
+Submission: 5
+-- Passed! --
+
+Grading 10fun_01call.cish
+Solution: 3
+Submission: 3
+-- Passed! --
+
+Grading 10fun_02argcall.cish
+Solution: 200
+Submission: 200
+-- Passed! --
+
+Grading 10fun_03widecall.cish
+Solution: 70
+Submission: 70
+-- Passed! --
+
+Grading 10fun_04writearg.cish
+Solution: 5
+Submission: 5
+-- Passed! --
+
+Grading 10fun_05compose.cish
+Solution: 200
+Submission: 200
+-- Passed! --
+
+Grading 10fun_06compexpr.cish
+Solution: 165
+Submission: 165
+-- Passed! --
+
+Grading 10fun_07recur.cish
+Solution: 125
+Submission: 125
+-- Passed! --
+
+Grading 11let_01shadow.cish
+Solution: 4
+Submission: 4
+-- Passed! --
+
+Grading 19cish_01fact.cish
+Solution: 30
+Submission: 30
+-- Passed! --
+
+Grading 19cish_02adder.cish
+Solution: 5
+Submission: 5
+-- Passed! --
+
+Grading 19cish_03fibo.cish
+Solution: 89
+Submission: 89
+-- Passed! --

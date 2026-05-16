@@ -1,0 +1,286 @@
+Grading 01cexpr_01add.sexp
+Solution:
+answer = 16
+Submission:
+answer = 16
+-- Passed! --
+
+Grading 01cexpr_02sub.sexp
+Solution:
+answer = 8
+Submission:
+answer = 8
+-- Passed! --
+
+Grading 01cexpr_03mul.sexp
+Solution:
+answer = 48
+Submission:
+answer = 48
+-- Passed! --
+
+Grading 01cexpr_04div.sexp
+Solution:
+answer = 3
+Submission:
+answer = 3
+-- Passed! --
+
+Grading 01cexpr_05eq.sexp
+Solution:
+answer = 2
+Submission:
+answer = 2
+-- Passed! --
+
+Grading 01cexpr_06neq.sexp
+Solution:
+answer = 5
+Submission:
+answer = 5
+-- Passed! --
+
+Grading 01cexpr_07gt.sexp
+Solution:
+answer = 1
+Submission:
+answer = 1
+-- Passed! --
+
+Grading 01cexpr_08gte.sexp
+Solution:
+answer = 3
+Submission:
+answer = 3
+-- Passed! --
+
+Grading 01cexpr_09lt.sexp
+Solution:
+answer = 4
+Submission:
+answer = 4
+-- Passed! --
+
+Grading 01cexpr_10lte.sexp
+Solution:
+answer = 6
+Submission:
+answer = 6
+-- Passed! --
+
+Grading 01cexpr_11uminus.sexp
+Solution:
+answer = 3
+Submission:
+answer = 3
+-- Passed! --
+
+Grading 01cexpr_12not.sexp
+Solution:
+answer = 0
+Submission:
+answer = 0
+-- Passed! --
+
+Grading 01cexpr_13and.sexp
+Solution:
+answer = 0
+Submission:
+answer = 0
+-- Passed! --
+
+Grading 01cexpr_14or.sexp
+Solution:
+answer = 1
+Submission:
+answer = 1
+-- Passed! --
+
+Grading 01cexpr_15bigcon.sexp
+Solution:
+answer = 100
+Submission:
+answer = 100
+-- Passed! --
+
+Grading 01cexpr_16bigcon.sexp
+Solution:
+answer = 10
+Submission:
+answer = 10
+-- Passed! --
+
+Grading 02vexpr_01add.sexp
+Solution:
+answer = 16
+Submission:
+answer = 16
+-- Passed! --
+
+Grading 02vexpr_02sub.sexp
+Solution:
+answer = 8
+Submission:
+answer = 8
+-- Passed! --
+
+Grading 02vexpr_03mul.sexp
+Solution:
+answer = 48
+Submission:
+answer = 48
+-- Passed! --
+
+Grading 02vexpr_04div.sexp
+Solution:
+answer = 3
+Submission:
+answer = 3
+-- Passed! --
+
+Grading 02vexpr_05eq.sexp
+Solution:
+answer = 0
+Submission:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_06neq.sexp
+Solution:
+answer = 1
+Submission:
+answer = 1
+-- Passed! --
+
+Grading 02vexpr_07gt.sexp
+Solution:
+answer = 1
+Submission:
+answer = 1
+-- Passed! --
+
+Grading 02vexpr_08gte.sexp
+Solution:
+answer = 1
+Submission:
+answer = 1
+-- Passed! --
+
+Grading 02vexpr_09lt.sexp
+Solution:
+answer = 0
+Submission:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_10lte.sexp
+Solution:
+answer = 0
+Submission:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_11uminus.sexp
+Solution:
+answer = 12
+Submission:
+answer = 12
+-- Passed! --
+
+Grading 02vexpr_12not.sexp
+Solution:
+answer = 0
+Submission:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_13and.sexp
+Solution:
+answer = 0
+Submission:
+answer = 0
+-- Passed! --
+
+Grading 02vexpr_14or.sexp
+Solution:
+answer = 1
+Submission:
+answer = 1
+-- Passed! --
+
+Grading 02vexpr_15assignval.sexp
+Solution:
+answer = 2
+Submission:
+answer = 2
+-- Passed! --
+
+Grading 03stmt_01if.sexp
+Solution:
+answer = 5
+Submission:
+answer = 5
+-- Passed! --
+
+Grading 03stmt_02if.sexp
+Solution:
+answer = 10
+Submission:
+answer = 10
+-- Passed! --
+
+Grading 03stmt_03while.sexp
+Solution:
+answer = 45
+Submission:
+answer = 45
+-- Passed! --
+
+Grading 03stmt_04for.sexp
+Solution:
+answer = 55
+Submission:
+answer = 55
+-- Passed! --
+
+Grading 03stmt_05if.sexp
+Solution:
+answer = 7
+Submission:
+answer = 7
+-- Passed! --
+
+Grading 03stmt_06for.sexp
+Solution:
+answer = 115
+Submission:
+answer = 115
+-- Passed! --
+
+Grading 04opt_01cfoldif.sexp
+Solution:
+answer = 3
+Submission:
+answer = 3
+-- Passed! --
+
+Grading 04opt_02cfoldif.sexp
+Solution:
+answer = 5
+Submission:
+answer = 5
+-- Passed! --
+
+Grading 09all_01adder.sexp
+Solution:
+answer = 5
+Submission:
+answer = 5
+-- Passed! --
+
+Grading 09all_02fibo.sexp
+Solution:
+answer = 97
+Submission:
+answer = 97
+-- Passed! --

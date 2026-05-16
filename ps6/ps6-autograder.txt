@@ -1,0 +1,434 @@
+Grading auto-poly-001.ml (0.25 pts)
+Solution: (int) * (bool)
+Submission: (int) * (bool)
+-- Passed! --
+
+Grading auto-poly-002.ml (0.25 pts)
+Solution: ((int) list) * ((bool) list)
+Submission: ((int) list) * ((bool) list)
+-- Passed! --
+
+Grading auto-poly-003.ml (0.25 pts)
+Solution: (int) list
+Submission: (int) list
+-- Passed! --
+
+Grading auto-poly-004.ml (0.25 pts)
+Solution: (int) * (bool)
+Submission: (int) * (bool)
+-- Passed! --
+
+Grading auto-poly-005.ml (0.25 pts)
+Solution: (int) * (bool)
+Submission: (int) * (bool)
+-- Passed! --
+
+Grading auto-poly-006.ml (0.25 pts)
+Solution: (int) * (bool)
+Submission: (int) * (bool)
+-- Passed! --
+
+Grading auto-poly-007.ml (0.25 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-poly-008.ml (0.25 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-poly-009.ml (0.25 pts)
+Solution: ((int) list) * ((bool) list)
+Submission: ((int) list) * ((bool) list)
+-- Passed! --
+
+Grading auto-poly-010.ml (0.25 pts)
+Solution: ((int) list) * ((bool) list)
+Submission: ((int) list) * ((bool) list)
+-- Passed! --
+
+Grading auto-poly-011.ml (0.25 pts)
+Solution: (bool) * (int)
+Submission: (bool) * (int)
+-- Passed! --
+
+Grading auto-poly-012.ml (0.25 pts)
+Solution: ((bool) * (int)) * ((int) * (bool))
+Submission: ((bool) * (int)) * ((int) * (bool))
+-- Passed! --
+
+Grading auto-poly-013.ml (0.25 pts)
+Solution: ((bool) * (int)) * ((bool) * (int))
+Submission: ((bool) * (int)) * ((bool) * (int))
+-- Passed! --
+
+Grading auto-poly-014.ml (0.25 pts)
+Solution: ((bool) * (bool)) * ((bool) * (bool))
+Submission: ((bool) * (bool)) * ((bool) * (bool))
+-- Passed! --
+
+Grading auto-poly-015.ml (0.25 pts)
+Solution: ((int) list) * (bool)
+Submission: ((int) list) * (bool)
+-- Passed! --
+
+Grading auto-poly-016.ml (0.25 pts)
+Solution: ((bool) * ((unit) * (int))) * (((unit) * ((int) * (bool))) * ((int) * ((bool) * (unit))))
+Submission: ((bool) * ((unit) * (int))) * (((unit) * ((int) * (bool))) * ((int) * ((bool) * (unit))))
+-- Passed! --
+
+Grading auto-simple-001.ml (0.1 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-simple-002.ml (0.1 pts)
+Solution: bool
+Submission: bool
+-- Passed! --
+
+Grading auto-simple-003.ml (0.1 pts)
+Solution: (int) list
+Submission: (int) list
+-- Passed! --
+
+Grading auto-simple-004.ml (0.1 pts)
+Solution: (bool) list
+Submission: (bool) list
+-- Passed! --
+
+Grading auto-simple-005.ml (0.1 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-simple-006.ml (0.1 pts)
+Solution: Type error
+Submission: Type error
+-- Passed! --
+
+Grading auto-simple-007.ml (0.1 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-simple-008.ml (0.1 pts)
+Solution: Type error
+Submission: Type error
+-- Passed! --
+
+Grading auto-simple-009.ml (0.1 pts)
+Solution: bool
+Submission: bool
+-- Passed! --
+
+Grading auto-simple-010.ml (0.1 pts)
+Solution: Type error
+Submission: Type error
+-- Passed! --
+
+Grading auto-simple-011.ml (0.1 pts)
+Solution: (int) * (int)
+Submission: (int) * (int)
+-- Passed! --
+
+Grading auto-simple-012.ml (0.1 pts)
+Solution: (bool) * (bool)
+Submission: (bool) * (bool)
+-- Passed! --
+
+Grading auto-simple-013.ml (0.1 pts)
+Solution: (bool) * ((int) * (bool))
+Submission: (bool) * ((int) * (bool))
+-- Passed! --
+
+Grading auto-simple-014.ml (0.1 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-simple-015.ml (0.1 pts)
+Solution: bool
+Submission: bool
+-- Passed! --
+
+Grading auto-simple-016.ml (0.1 pts)
+Solution: bool
+Submission: bool
+-- Passed! --
+
+Grading auto-simple-017.ml (0.1 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-simple-018.ml (0.1 pts)
+Solution: (int) list
+Submission: (int) list
+-- Passed! --
+
+Grading auto-simple-019.ml (0.1 pts)
+Solution: Type error
+Submission: Type error
+-- Passed! --
+
+Grading auto-simple-020.ml (0.1 pts)
+Solution: ((int) * (int)) list
+Submission: ((int) * (int)) list
+-- Passed! --
+
+Grading auto-simple-021.ml (0.1 pts)
+Solution: ((int) list) list
+Submission: ((int) list) list
+-- Passed! --
+
+Grading auto-simple-022.ml (0.1 pts)
+Solution: Type error
+Submission: Type error
+-- Passed! --
+
+Grading auto-simple-023.ml (0.1 pts)
+Solution: unit
+Submission: unit
+-- Passed! --
+
+Grading auto-simple-024.ml (0.1 pts)
+Solution: (unit) list
+Submission: (unit) list
+-- Passed! --
+
+Grading auto-simple-025.ml (0.1 pts)
+Solution: (int) -> (int)
+Submission: (int) -> (int)
+-- Passed! --
+
+Grading auto-simple-026.ml (0.1 pts)
+Solution: (bool) -> (int)
+Submission: (bool) -> (int)
+-- Passed! --
+
+Grading auto-simple-027.ml (0.1 pts)
+Solution: (bool) -> (bool)
+Submission: (bool) -> (bool)
+-- Passed! --
+
+Grading auto-simple-028.ml (0.1 pts)
+Solution: (int) -> ((int) list)
+Submission: (int) -> ((int) list)
+-- Passed! --
+
+Grading auto-simple-029.ml (0.1 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-simple-030.ml (0.1 pts)
+Solution: bool
+Submission: bool
+-- Passed! --
+
+Grading auto-simple-031.ml (0.1 pts)
+Solution: int
+Submission: int
+-- Passed! --
+
+Grading auto-simple-032.ml (0.1 pts)
+Solution: Type error
+Submission: Type error
+-- Passed! --
+
+Grading auto-simple-033.ml (0.1 pts)
+Solution: ((int) -> (int)) -> (int)
+Submission: ((int) -> (int)) -> (int)
+-- Passed! --
+
+Grading auto-simple-034.ml (0.1 pts)
+Solution: (((int) -> (int)) -> ((int) -> (int))) -> (int)
+Submission: (((int) -> (int)) -> ((int) -> (int))) -> (int)
+-- Passed! --
+
+Grading auto-simple-035.ml (0.1 pts)
+Solution: Type error
+Submission: Type error
+-- Passed! --
+
+Grading auto-simple-036.ml (0.1 pts)
+Solution: (int) -> ((int) -> (int))
+Submission: (int) -> ((int) -> (int))
+-- Passed! --
+
+Grading auto-simple-037.ml (0.1 pts)
+Solution: (int) -> ((int) -> ((int) -> (int)))
+Submission: (int) -> ((int) -> ((int) -> (int)))
+-- Passed! --
+
+Grading auto-simple-038.ml (0.1 pts)
+Solution: ((int) -> ((int) -> (int))) -> (int)
+Submission: ((int) -> ((int) -> (int))) -> (int)
+-- Passed! --
+
+Grading auto-simple-039.ml (0.1 pts)
+Solution: ((int) * (bool)) -> ((int) * (int))
+Submission: ((int) * (bool)) -> ((int) * (int))
+-- Passed! --
+
+Grading auto-simple-040.ml (0.1 pts)
+Solution: ((int) list) -> ((int) list)
+Submission: ((int) list) -> ((int) list)
+-- Passed! --
+
+Grading auto-compile-001.ml (0.064516129 pts)
+Solution: answer = 2
+Submission: answer = 2
+-- Passed! --
+
+Grading auto-compile-002.ml (0.064516129 pts)
+Solution: answer = 1
+Submission: answer = 1
+-- Passed! --
+
+Grading auto-compile-003.ml (0.064516129 pts)
+Solution: answer = 6
+Submission: answer = 6
+-- Passed! --
+
+Grading auto-compile-004.ml (0.064516129 pts)
+Solution: answer = 3
+Submission: answer = 3
+-- Passed! --
+
+Grading auto-compile-005.ml (0.064516129 pts)
+Solution: answer = 0
+Submission: answer = 0
+-- Passed! --
+
+Grading auto-compile-006.ml (0.064516129 pts)
+Solution: answer = 1
+Submission: answer = 1
+-- Passed! --
+
+Grading auto-compile-007.ml (0.064516129 pts)
+Solution: answer = 3
+Submission: answer = 3
+-- Passed! --
+
+Grading auto-compile-008.ml (0.064516129 pts)
+Solution: answer = 4
+Submission: answer = 4
+-- Passed! --
+
+Grading auto-compile-009.ml (0.064516129 pts)
+Solution: answer = 5
+Submission: answer = 5
+-- Passed! --
+
+Grading auto-compile-010.ml (0.064516129 pts)
+Solution: answer = 1
+Submission: answer = 1
+-- Passed! --
+
+Grading auto-compile-011.ml (0.064516129 pts)
+Solution: answer = 0
+Submission: answer = 0
+-- Passed! --
+
+Grading auto-compile-012.ml (0.064516129 pts)
+Solution: answer = 3
+Submission: answer = 3
+-- Passed! --
+
+Grading auto-compile-013.ml (0.064516129 pts)
+Solution: answer = 4
+Submission: answer = 4
+-- Passed! --
+
+Grading auto-compile-014.ml (0.064516129 pts)
+Solution: answer = 7
+Submission: answer = 7
+-- Passed! --
+
+Grading auto-compile-015.ml (0.064516129 pts)
+Solution: answer = 8
+Submission: answer = 8
+-- Passed! --
+
+Grading auto-compile-016.ml (0.064516129 pts)
+Solution: answer = 6
+Submission: answer = 6
+-- Passed! --
+
+Grading auto-compile-017.ml (0.064516129 pts)
+Solution: answer = 18
+Submission: answer = 18
+-- Passed! --
+
+Grading auto-compile-018.ml (0.064516129 pts)
+Solution: answer = 12
+Submission: answer = 12
+-- Passed! --
+
+Grading auto-compile-019.ml (0.064516129 pts)
+Solution: answer = 10
+Submission: answer = 10
+-- Passed! --
+
+Grading auto-compile-020.ml (0.064516129 pts)
+Solution: answer = 15
+Submission: answer = 15
+-- Passed! --
+
+Grading auto-compile-021.ml (0.064516129 pts)
+Solution: answer = 3
+Submission: answer = 3
+-- Passed! --
+
+Grading auto-compile-022.ml (0.064516129 pts)
+Solution: answer = 36
+Submission: answer = 36
+-- Passed! --
+
+Grading auto-compile-023.ml (0.064516129 pts)
+Solution: answer = 4
+Submission: answer = 4
+-- Passed! --
+
+Grading auto-compile-024.ml (0.064516129 pts)
+Solution: answer = 140
+Submission: answer = 140
+-- Passed! --
+
+Grading auto-compile-025.ml (0.064516129 pts)
+Solution: answer = 27
+Submission: answer = 27
+-- Passed! --
+
+Grading auto-compile-026.ml (0.064516129 pts)
+Solution: answer = 5
+Submission: answer = 5
+-- Passed! --
+
+Grading auto-compile-027.ml (0.064516129 pts)
+Solution: answer = 90
+Submission: answer = 90
+-- Passed! --
+
+Grading auto-compile-028.ml (0.064516129 pts)
+Solution: answer = 7
+Submission: answer = 7
+-- Passed! --
+
+Grading auto-compile-029.ml (0.064516129 pts)
+Solution: answer = 9
+Submission: answer = 9
+-- Passed! --
+
+Grading auto-compile-030.ml (0.064516129 pts)
+Solution: answer = 17
+Submission: answer = 17
+-- Passed! --
+
+Grading auto-compile-031.ml (0.064516129 pts)
+Solution: answer = 0
+Submission: answer = 0
+-- Passed! --

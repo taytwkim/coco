@@ -1,0 +1,1909 @@
+Grading 01cexpr_05eq.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 1=2 goto .L3 else goto .L2
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+t1 := 4*t0
+if 2=2 goto .L6 else goto .L5
+
+.L6:
+t2 := 1
+jump .L4
+
+.L5:
+t2 := 0
+jump .L4
+
+.L4:
+t3 := 2*t2
+t4 := t1+t3
+if 3=2 goto .L9 else goto .L8
+
+.L9:
+t5 := 1
+jump .L7
+
+.L8:
+t5 := 0
+jump .L7
+
+.L7:
+t6 := 1*t5
+t7 := t4+t6
+$x10 := t7
+jump .L0
+
+.L10:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_06neq.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 1!=2 goto .L3 else goto .L2
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+t1 := 4*t0
+if 2!=2 goto .L6 else goto .L5
+
+.L6:
+t2 := 1
+jump .L4
+
+.L5:
+t2 := 0
+jump .L4
+
+.L4:
+t3 := 2*t2
+t4 := t1+t3
+if 3!=2 goto .L9 else goto .L8
+
+.L9:
+t5 := 1
+jump .L7
+
+.L8:
+t5 := 0
+jump .L7
+
+.L7:
+t6 := 1*t5
+t7 := t4+t6
+$x10 := t7
+jump .L0
+
+.L10:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_07gt.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 1>2 goto .L3 else goto .L2
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+t1 := 4*t0
+if 2>2 goto .L6 else goto .L5
+
+.L6:
+t2 := 1
+jump .L4
+
+.L5:
+t2 := 0
+jump .L4
+
+.L4:
+t3 := 2*t2
+t4 := t1+t3
+if 3>2 goto .L9 else goto .L8
+
+.L9:
+t5 := 1
+jump .L7
+
+.L8:
+t5 := 0
+jump .L7
+
+.L7:
+t6 := 1*t5
+t7 := t4+t6
+$x10 := t7
+jump .L0
+
+.L10:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_08gte.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 1>=2 goto .L3 else goto .L2
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+t1 := 4*t0
+if 2>=2 goto .L6 else goto .L5
+
+.L6:
+t2 := 1
+jump .L4
+
+.L5:
+t2 := 0
+jump .L4
+
+.L4:
+t3 := 2*t2
+t4 := t1+t3
+if 3>=2 goto .L9 else goto .L8
+
+.L9:
+t5 := 1
+jump .L7
+
+.L8:
+t5 := 0
+jump .L7
+
+.L7:
+t6 := 1*t5
+t7 := t4+t6
+$x10 := t7
+jump .L0
+
+.L10:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_09lt.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 1<2 goto .L3 else goto .L2
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+t1 := 4*t0
+if 2<2 goto .L6 else goto .L5
+
+.L6:
+t2 := 1
+jump .L4
+
+.L5:
+t2 := 0
+jump .L4
+
+.L4:
+t3 := 2*t2
+t4 := t1+t3
+if 3<2 goto .L9 else goto .L8
+
+.L9:
+t5 := 1
+jump .L7
+
+.L8:
+t5 := 0
+jump .L7
+
+.L7:
+t6 := 1*t5
+t7 := t4+t6
+$x10 := t7
+jump .L0
+
+.L10:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_10lte.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 1<=2 goto .L3 else goto .L2
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+t1 := 4*t0
+if 2<=2 goto .L6 else goto .L5
+
+.L6:
+t2 := 1
+jump .L4
+
+.L5:
+t2 := 0
+jump .L4
+
+.L4:
+t3 := 2*t2
+t4 := t1+t3
+if 3<=2 goto .L9 else goto .L8
+
+.L9:
+t5 := 1
+jump .L7
+
+.L8:
+t5 := 0
+jump .L7
+
+.L7:
+t6 := 1*t5
+t7 := t4+t6
+$x10 := t7
+jump .L0
+
+.L10:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_11uminus.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 0-12
+$x10 := t0
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_12not.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 12!=0 goto .L2 else goto .L3
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+$x10 := t0
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_13and.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 15!=0 goto .L4 else goto .L2
+
+.L4:
+if 0!=0 goto .L3 else goto .L2
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+$x10 := t0
+jump .L0
+
+.L5:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_14or.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 15!=0 goto .L3 else goto .L4
+
+.L4:
+if 0!=0 goto .L3 else goto .L2
+
+.L3:
+t0 := 1
+jump .L1
+
+.L2:
+t0 := 0
+jump .L1
+
+.L1:
+$x10 := t0
+jump .L0
+
+.L5:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_15bigcon.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 100000+150000
+$x10 := t0
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 01cexpr_16bigcon.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 0-100000
+t1 := t0+150000
+$x10 := t1
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_01add.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+t2 := t0+t1
+$x10 := t2
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_02sub.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+t2 := t0-t1
+$x10 := t2
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_03mul.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+t2 := t0*t1
+$x10 := t2
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_04div.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+t2 := t0/t1
+$x10 := t2
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_05eq.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+if t0=t1 goto .L3 else goto .L2
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 0
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_06neq.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+if t0!=t1 goto .L3 else goto .L2
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 0
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_07gt.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+if t0>t1 goto .L3 else goto .L2
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 0
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_08gte.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+if t0>=t1 goto .L3 else goto .L2
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 0
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_09lt.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+if t0
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 0
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_10lte.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 4
+if t0<=t1 goto .L3 else goto .L2
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 0
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_11uminus.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+t1 := 0-t0
+$x10 := t1
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_12not.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 12
+if t0!=0 goto .L2 else goto .L3
+
+.L3:
+t1 := 1
+jump .L1
+
+.L2:
+t1 := 0
+jump .L1
+
+.L1:
+$x10 := t1
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_13and.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 15
+t1 := 0
+if t0!=0 goto .L4 else goto .L2
+
+.L4:
+if t1!=0 goto .L3 else goto .L2
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 0
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L5:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_14or.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 15
+t1 := 0
+if t0!=0 goto .L3 else goto .L4
+
+.L4:
+if t1!=0 goto .L3 else goto .L2
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 0
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L5:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 02vexpr_15assignval.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 1
+t0 := 2
+t1 := 2
+$x10 := t1
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 03stmt_01if.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 1
+t1 := 2
+if t0!=t1 goto .L3 else goto .L2
+
+.L3:
+$x10 := 5
+jump .L0
+
+.L4:
+jump .L1
+
+.L2:
+$x10 := 10
+jump .L0
+
+.L5:
+jump .L1
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 03stmt_02if.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 1
+t1 := 2
+if t0=t1 goto .L3 else goto .L2
+
+.L3:
+$x10 := 5
+jump .L0
+
+.L4:
+jump .L1
+
+.L2:
+$x10 := 10
+jump .L0
+
+.L5:
+jump .L1
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 03stmt_03while.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 0
+t1 := 0
+jump .L3
+
+.L2:
+t2 := t1+t0
+t1 := t2
+t3 := t0+1
+t0 := t3
+jump .L3
+
+.L3:
+if t0<10 goto .L2 else goto .L1
+
+.L1:
+$x10 := t1
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 03stmt_04for.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 0
+t1 := 0
+t1 := 10
+jump .L3
+
+.L2:
+t2 := t0+t1
+t0 := t2
+t3 := t1-1
+t1 := t3
+jump .L3
+
+.L3:
+if t1>0 goto .L2 else goto .L1
+
+.L1:
+$x10 := t0
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 03stmt_05if.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 2
+t1 := 2
+t2 := 1
+t3 := 0
+if t0=1 goto .L3 else goto .L2
+
+.L3:
+if t1=1 goto .L6 else goto .L5
+
+.L6:
+if t2=1 goto .L9 else goto .L8
+
+.L9:
+t3 := 1
+jump .L7
+
+.L8:
+t3 := 2
+jump .L7
+
+.L7:
+jump .L4
+
+.L5:
+if t2=1 goto .L12 else goto .L11
+
+.L12:
+t3 := 3
+jump .L10
+
+.L11:
+t3 := 4
+jump .L10
+
+.L10:
+jump .L4
+
+.L4:
+jump .L1
+
+.L2:
+if t1=1 goto .L15 else goto .L14
+
+.L15:
+if t2=1 goto .L18 else goto .L17
+
+.L18:
+t3 := 5
+jump .L16
+
+.L17:
+t3 := 6
+jump .L16
+
+.L16:
+jump .L13
+
+.L14:
+if t2=1 goto .L21 else goto .L20
+
+.L21:
+t3 := 7
+jump .L19
+
+.L20:
+t3 := 8
+jump .L19
+
+.L19:
+jump .L13
+
+.L13:
+jump .L1
+
+.L1:
+$x10 := t3
+jump .L0
+
+.L22:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 03stmt_06for.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 0
+t1 := 0
+t2 := 0
+t3 := 0
+t1 := 1
+jump .L3
+
+.L2:
+t2 := 1
+jump .L6
+
+.L5:
+t3 := 1
+jump .L9
+
+.L8:
+t4 := t0+t3
+t0 := t4
+t5 := t3+1
+t3 := t5
+jump .L9
+
+.L9:
+if t3<=t2 goto .L8 else goto .L7
+
+.L7:
+t6 := t2+1
+t2 := t6
+jump .L6
+
+.L6:
+if t2<=t1 goto .L5 else goto .L4
+
+.L4:
+t7 := t1+1
+t1 := t7
+jump .L3
+
+.L3:
+if t1<=10 goto .L2 else goto .L1
+
+.L1:
+$x10 := t0
+jump .L0
+
+.L10:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 09fish_01adder.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 2
+t1 := 3
+t2 := 0
+t3 := 0
+t4 := 0
+t5 := 0
+t6 := 0
+t7 := 0
+t8 := 0
+t9 := 0
+if t0<0 goto .L3 else goto .L6
+
+.L6:
+if t0>3 goto .L3 else goto .L5
+
+.L5:
+if t1<0 goto .L3 else goto .L4
+
+.L4:
+if t1>3 goto .L3 else goto .L2
+
+.L3:
+t10 := 0-1
+$x10 := t10
+jump .L0
+
+.L7:
+jump .L1
+
+.L2:
+jump .L1
+
+.L1:
+if t0>=2 goto .L10 else goto .L9
+
+.L10:
+t2 := 1
+jump .L8
+
+.L9:
+t2 := 0
+jump .L8
+
+.L8:
+t11 := 2*t2
+t12 := t0-t11
+t4 := t12
+if t1>=2 goto .L13 else goto .L12
+
+.L13:
+t3 := 1
+jump .L11
+
+.L12:
+t3 := 0
+jump .L11
+
+.L11:
+t13 := 2*t3
+t14 := t1-t13
+t5 := t14
+if t4!=0 goto .L17 else goto .L18
+
+.L18:
+if t5!=0 goto .L17 else goto .L15
+
+.L17:
+if t4!=0 goto .L19 else goto .L16
+
+.L19:
+if t5!=0 goto .L15 else goto .L16
+
+.L16:
+t6 := 1
+jump .L14
+
+.L15:
+t6 := 0
+jump .L14
+
+.L14:
+if t4!=0 goto .L23 else goto .L21
+
+.L23:
+if t5!=0 goto .L22 else goto .L21
+
+.L22:
+t7 := 1
+jump .L20
+
+.L21:
+t7 := 0
+jump .L20
+
+.L20:
+if t2!=0 goto .L31 else goto .L29
+
+.L31:
+if t3!=0 goto .L30 else goto .L29
+
+.L30:
+if t7!=0 goto .L26 else goto .L29
+
+.L29:
+if t2!=0 goto .L33 else goto .L28
+
+.L33:
+if t3!=0 goto .L28 else goto .L32
+
+.L32:
+if t7!=0 goto .L28 else goto .L26
+
+.L28:
+if t2!=0 goto .L27 else goto .L35
+
+.L35:
+if t3!=0 goto .L34 else goto .L27
+
+.L34:
+if t7!=0 goto .L27 else goto .L26
+
+.L27:
+if t2!=0 goto .L25 else goto .L37
+
+.L37:
+if t3!=0 goto .L25 else goto .L36
+
+.L36:
+if t7!=0 goto .L26 else goto .L25
+
+.L26:
+t8 := 1
+jump .L24
+
+.L25:
+t8 := 0
+jump .L24
+
+.L24:
+if t2!=0 goto .L43 else goto .L42
+
+.L43:
+if t3!=0 goto .L40 else goto .L42
+
+.L42:
+if t2!=0 goto .L44 else goto .L41
+
+.L44:
+if t7!=0 goto .L40 else goto .L41
+
+.L41:
+if t3!=0 goto .L45 else goto .L39
+
+.L45:
+if t7!=0 goto .L40 else goto .L39
+
+.L40:
+t9 := 1
+jump .L38
+
+.L39:
+t9 := 0
+jump .L38
+
+.L38:
+t15 := 4*t9
+t16 := 2*t8
+t17 := t15+t16
+t18 := t17+t6
+$x10 := t18
+jump .L0
+
+.L46:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 09fish_02fibo.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 1000
+t1 := 0
+t2 := 1
+jump .L3
+
+.L2:
+t3 := t1+t2
+t4 := t3
+t1 := t2
+t2 := t4
+jump .L3
+
+.L3:
+if t2
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading 11let_01shadow.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 3
+t1 := 4
+$x10 := t1
+jump .L0
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading condtest.cish (0.5 pts)
+
+==========================
+Processing function: f
+blocks =
+f:
+t0 := $x10
+t1 := $x11
+t2 := 0
+if t0>t1 goto .L3 else goto .L2
+
+.L3:
+t2 := 1
+jump .L1
+
+.L2:
+t2 := 2
+jump .L1
+
+.L1:
+$x10 := t2
+jump .L0
+
+.L4:
+jump .L0
+
+.L0:
+return
+
+==========================
+Processing function: main
+blocks =
+main:
+$x10 := 0
+jump .L5
+
+.L6:
+jump .L5
+
+.L5:
+return
+
+-- Passed! --
+
+Grading monster_converge.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 9
+t1 := 5
+t2 := 1
+t3 := 0
+t4 := 7
+t5 := 0
+jump .L3
+
+.L2:
+jump .L6
+
+.L5:
+jump .L9
+
+.L8:
+jump .L12
+
+.L11:
+jump .L15
+
+.L14:
+jump .L18
+
+.L17:
+jump .L21
+
+.L20:
+jump .L24
+
+.L23:
+jump .L27
+
+.L26:
+jump .L30
+
+.L29:
+jump .L33
+
+.L32:
+jump .L36
+
+.L35:
+jump .L39
+
+.L38:
+jump .L42
+
+.L41:
+jump .L45
+
+.L44:
+jump .L48
+
+.L47:
+jump .L51
+
+.L50:
+jump .L54
+
+.L53:
+jump .L57
+
+.L56:
+jump .L60
+
+.L59:
+jump .L63
+
+.L62:
+jump .L66
+
+.L65:
+jump .L69
+
+.L68:
+jump .L72
+
+.L71:
+jump .L75
+
+.L74:
+jump .L78
+
+.L77:
+jump .L81
+
+.L80:
+jump .L84
+
+.L83:
+jump .L87
+
+.L86:
+jump .L90
+
+.L89:
+jump .L93
+
+.L92:
+jump .L96
+
+.L95:
+jump .L99
+
+.L98:
+jump .L102
+
+.L101:
+jump .L105
+
+.L104:
+jump .L108
+
+.L107:
+t5 := 0
+jump .L111
+
+.L110:
+t6 := t4+27
+t4 := t6
+t7 := 27*t4
+t0 := t7
+t8 := 100+t4
+t9 := t8+t0
+t1 := t9
+t10 := 100-t4
+t11 := t10+t2
+t3 := t11
+t12 := 27+27
+t13 := t12+27
+t14 := t13+t2
+t5 := t14
+$x10 := 0
+jump .L0
+
+.L112:
+t15 := t5+1
+t5 := t15
+jump .L111
+
+.L111:
+if t5<25 goto .L110 else goto .L109
+
+.L109:
+jump .L108
+
+.L108:
+if t4<50 goto .L107 else goto .L106
+
+.L106:
+jump .L105
+
+.L105:
+if t4<50 goto .L104 else goto .L103
+
+.L103:
+jump .L102
+
+.L102:
+if t4<50 goto .L101 else goto .L100
+
+.L100:
+jump .L99
+
+.L99:
+if t4<50 goto .L98 else goto .L97
+
+.L97:
+jump .L96
+
+.L96:
+if t4<50 goto .L95 else goto .L94
+
+.L94:
+jump .L93
+
+.L93:
+if t4<50 goto .L92 else goto .L91
+
+.L91:
+jump .L90
+
+.L90:
+if t4<50 goto .L89 else goto .L88
+
+.L88:
+jump .L87
+
+.L87:
+if t4<50 goto .L86 else goto .L85
+
+.L85:
+jump .L84
+
+.L84:
+if t4<50 goto .L83 else goto .L82
+
+.L82:
+jump .L81
+
+.L81:
+if t4<50 goto .L80 else goto .L79
+
+.L79:
+jump .L78
+
+.L78:
+if t4<50 goto .L77 else goto .L76
+
+.L76:
+jump .L75
+
+.L75:
+if t4<50 goto .L74 else goto .L73
+
+.L73:
+jump .L72
+
+.L72:
+if t4<50 goto .L71 else goto .L70
+
+.L70:
+jump .L69
+
+.L69:
+if t4<50 goto .L68 else goto .L67
+
+.L67:
+jump .L66
+
+.L66:
+if t4<50 goto .L65 else goto .L64
+
+.L64:
+jump .L63
+
+.L63:
+if t4<50 goto .L62 else goto .L61
+
+.L61:
+jump .L60
+
+.L60:
+if t4<50 goto .L59 else goto .L58
+
+.L58:
+jump .L57
+
+.L57:
+if t4<50 goto .L56 else goto .L55
+
+.L55:
+jump .L54
+
+.L54:
+if t4<50 goto .L53 else goto .L52
+
+.L52:
+jump .L51
+
+.L51:
+if t4<50 goto .L50 else goto .L49
+
+.L49:
+jump .L48
+
+.L48:
+if t4<50 goto .L47 else goto .L46
+
+.L46:
+jump .L45
+
+.L45:
+if t4<50 goto .L44 else goto .L43
+
+.L43:
+jump .L42
+
+.L42:
+if t4<50 goto .L41 else goto .L40
+
+.L40:
+jump .L39
+
+.L39:
+if t4<50 goto .L38 else goto .L37
+
+.L37:
+jump .L36
+
+.L36:
+if t4<50 goto .L35 else goto .L34
+
+.L34:
+jump .L33
+
+.L33:
+if t4<50 goto .L32 else goto .L31
+
+.L31:
+jump .L30
+
+.L30:
+if t4<50 goto .L29 else goto .L28
+
+.L28:
+jump .L27
+
+.L27:
+if t4<50 goto .L26 else goto .L25
+
+.L25:
+jump .L24
+
+.L24:
+if t4<50 goto .L23 else goto .L22
+
+.L22:
+jump .L21
+
+.L21:
+if t4<50 goto .L20 else goto .L19
+
+.L19:
+jump .L18
+
+.L18:
+if t4<50 goto .L17 else goto .L16
+
+.L16:
+jump .L15
+
+.L15:
+if t4<50 goto .L14 else goto .L13
+
+.L13:
+jump .L12
+
+.L12:
+if t4<50 goto .L11 else goto .L10
+
+.L10:
+jump .L9
+
+.L9:
+if t2<27 goto .L8 else goto .L7
+
+.L7:
+jump .L6
+
+.L6:
+if t1<5 goto .L5 else goto .L4
+
+.L4:
+jump .L3
+
+.L3:
+if t0<10 goto .L2 else goto .L1
+
+.L1:
+$x10 := 0
+jump .L0
+
+.L113:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading nested.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+t0 := 0
+t1 := 0
+t2 := 0
+t1 := 10
+jump .L3
+
+.L2:
+t2 := 0
+jump .L6
+
+.L5:
+t3 := t0+1
+t0 := t3
+t4 := t2+1
+t2 := t4
+jump .L6
+
+.L6:
+if t2<5 goto .L5 else goto .L4
+
+.L4:
+t5 := t1-1
+t1 := t5
+jump .L3
+
+.L3:
+if t1>0 goto .L2 else goto .L1
+
+.L1:
+$x10 := t0
+jump .L0
+
+.L7:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --
+
+Grading rettest.cish (0.5 pts)
+
+==========================
+Processing function: main
+blocks =
+main:
+if 1!=0 goto .L3 else goto .L2
+
+.L3:
+$x10 := 0
+jump .L0
+
+.L4:
+jump .L1
+
+.L2:
+if 1!=0 goto .L7 else goto .L6
+
+.L7:
+$x10 := 1
+jump .L0
+
+.L8:
+jump .L5
+
+.L6:
+if 1!=0 goto .L11 else goto .L10
+
+.L11:
+$x10 := 2
+jump .L0
+
+.L12:
+jump .L9
+
+.L10:
+$x10 := 3
+jump .L0
+
+.L13:
+jump .L9
+
+.L9:
+jump .L5
+
+.L5:
+jump .L1
+
+.L1:
+jump .L0
+
+.L0:
+return
+
+-- Passed! --

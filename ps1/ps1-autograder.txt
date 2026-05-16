@@ -1,0 +1,172 @@
+Testing i_arith0 worth 0.250 pts
+Instructions:
+li x1, 4
+add x2, x1, x1
+testing register file ...
+testing memory ...
+0x400000
+0x40000C
+PC passed
+
+Testing i_arith1 worth 0.250 pts
+Instructions:
+ori x1, x0, 1
+ori x2, x0, 2
+add x3, x1, x2
+testing register file ...
+testing memory ...
+0x400000
+0x40000C
+PC passed
+
+Testing i_arith2 worth 0.250 pts
+Instructions:
+ori x1, x0, 1
+ori x2, x0, 1
+add x2, x1, x2
+testing register file ...
+testing memory ...
+0x400000
+0x40000C
+PC passed
+
+Testing i_arith3 worth 0.250 pts
+Instructions:
+add x1, x0, 4
+add x2, x1, x1
+add x3, x2, x2
+testing register file ...
+testing memory ...
+0x400000
+0x40000C
+PC passed
+
+Testing i_li0 worth 0.250 pts
+Instructions:
+li x1, -17958194
+testing register file ...
+testing memory ...
+0x400000
+0x400008
+PC passed
+
+Testing i_li1 worth 0.250 pts
+Instructions:
+li x1, -87097619
+testing register file ...
+testing memory ...
+0x400000
+0x400008
+PC passed
+
+Testing i_li2 worth 0.250 pts
+Instructions:
+li x1, -87097619
+lui x1, -1091633152
+testing register file ...
+testing memory ...
+0x400000
+0x40000C
+PC passed
+
+Testing i_li3 worth 0.250 pts
+Instructions:
+li x2, -17958194
+lui x3, -1091633152
+testing register file ...
+testing memory ...
+0x400000
+0x40000C
+PC passed
+
+Testing i_mem0 worth 0.333 pts
+Instructions:
+li x15, 32
+sw x0, 256(x15)
+lw x16, 256(x0)
+testing register file ...
+testing memory ...
+0x400000
+0x400010
+PC passed
+
+Testing i_mem1 worth 0.333 pts
+Instructions:
+li x15, 32
+li x14, 48
+sw x14, 256(x15)
+lw x16, 256(x14)
+testing register file ...
+testing memory ...
+0x400000
+0x400018
+PC passed
+
+Testing i_mem2 worth 0.333 pts
+Instructions:
+li x15, 32
+sw x0, 256(x15)
+lw x16, 260(x0)
+testing register file ...
+testing memory ...
+0x400000
+0x400010
+PC passed
+
+Testing i_beqt worth 0.500 pts
+Instructions:
+beq x0, x0, 8
+testing register file ...
+testing memory ...
+0x400000
+0x400008
+PC passed
+
+Testing i_beqf worth 0.500 pts
+Instructions:
+li x1, 4
+beq x0, x1, 4
+testing register file ...
+testing memory ...
+0x400000
+0x40000C
+PC passed
+
+Testing i_jalr0 worth 0.500 pts
+Instructions:
+li x1, 65248
+jalr x2, x2, 14
+testing register file ...
+testing memory ...
+0x400000
+0xFEEE
+PC passed
+
+Testing i_jalr1 worth 0.500 pts
+Instructions:
+li x2, 64206
+li x1, 65248
+jalr x10, x10, 0
+testing register file ...
+testing memory ...
+0x400000
+0xFACE
+PC passed
+
+Testing i_jal0 worth 0.500 pts
+Instructions:
+jal x3, 65248
+testing register file ...
+testing memory ...
+0x400000
+0x40FEE0
+PC passed
+
+Testing i_jal1 worth 0.500 pts
+Instructions:
+jal x2, 10
+testing register file ...
+testing memory ...
+0x400000
+0x40000A
+PC passed

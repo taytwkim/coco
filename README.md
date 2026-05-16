@@ -1,6 +1,6 @@
 <h1 align="center">Compiler Construction</h1>
 
-This semester, I'm taking a course on Compilers where the problem sets involve incrementally building compiler features in OCaml. Starters were provided by Professor Sam Westrick (NYU).
+On Spring 2026, I took a course on Compilers where the problem sets involved incrementally building compiler features in OCaml. Starters were provided by Professor Sam Westrick (NYU).
 
 ## 📚 Study Notes
 
