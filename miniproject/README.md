@@ -1,4 +1,4 @@
-# Mini Project
+# `mini project`
 
 For this assignment, we revisit the task of compiling Cish to RISC-V
 that we originally completed in `ps4`, but this time our goal
@@ -28,7 +28,7 @@ instructions there if you forgot.
 ## Details About Performance Evaluation
 
 We will be assessing the performance of your compiler's generated code
-for 6 benchmark programs included in the `bench/` subdirectory.
+for 9 benchmark programs included in the `bench/` subdirectory.
 
 To assess the performance of a program, instead of using qemu or temu,
 we will use an emulator that actually also tries to simulate how long

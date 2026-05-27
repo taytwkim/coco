@@ -8,6 +8,7 @@ In Spring 2026, I took a Compilers course where the problem sets involved increm
 - [Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/002-coco2/)
 - [A-Normal Form and Optimizations](https://taytwkim.vercel.app/blog/compiler/003-coco3/)
 - [Data-flow Analysis on a Control-flow Graph](https://taytwkim.vercel.app/blog/compiler/004-coco4/)
+- [Graph-Coloring Register Allocation](https://taytwkim.vercel.app/blog/compiler/005-coco5/)
 
 ## 🐫 Problem Sets
 
@@ -74,6 +75,6 @@ The goal of `ps7` is to run a liveness analysis on a CFG, then use the computed 
 
 ### <a id="mini-project"></a> `mini project`: Register Allocation
 
-The goal of the mini project is to optimize our compiler by implementing register allocation. Using the interference graph from `ps7`, we assign registers to temporary variables so that interfering values are not placed in the same register. 
+The goal of the `mini project` is to optimize our compiler by implementing register allocation. Using the interference graph from `ps7`, we assign registers to temporary variables so that interfering values are not placed in the same register. 
 
 When register pressure is too high (too many temporaries interfere at the same time), some temporaries must be spilled to the stack, which adds expensive memory accesses. The main objective is to minimize spills and improve execution time compared to the `ps4` baseline.
