@@ -1,13 +1,13 @@
 <h1 align="center">Compiler Construction</h1>
 
-In Spring 2026, I took a course on Compilers where the problem sets involved incrementally building compiler features in OCaml. Starters were provided by Professor Sam Westrick (NYU).
+In Spring 2026, I took a Compilers course where the problem sets involved incrementally building compiler features in OCaml. Starters were provided by Professor Sam Westrick (NYU).
 
 ## 📚 Study Notes
 
-- [Part 1: Assembly, Lexer, Parser, and Function Calls](https://taytwkim.vercel.app/blog/compiler/000-coco1/)
-- [Part 2: Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/001-coco2/)
-- [Part 3: A-Normal Form and Optimizations](https://taytwkim.vercel.app/blog/compiler/002-coco3/)
-- [Part 4: Data-flow Analysis on a Control-flow Graph](https://taytwkim.vercel.app/blog/compiler/003-coco4/)
+- [Assembly, Lexer, Parser, and Function Calls](https://taytwkim.vercel.app/blog/compiler/001-coco1/)
+- [Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/002-coco2/)
+- [A-Normal Form and Optimizations](https://taytwkim.vercel.app/blog/compiler/003-coco3/)
+- [Data-flow Analysis on a Control-flow Graph](https://taytwkim.vercel.app/blog/compiler/004-coco4/)
 
 ## 🐫 Problem Sets
 
