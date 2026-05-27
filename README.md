@@ -4,7 +4,7 @@ In Spring 2026, I took a Compilers course where the problem sets involved increm
 
 ## 📚 Study Notes
 
-- [Assembly, Lexer, Parser, and Function Calls](https://taytwkim.vercel.app/blog/compiler/001-coco1/)
+- [Assembly, Lexer + Parser, Compiling Function Calls](https://taytwkim.vercel.app/blog/compiler/001-coco1/)
 - [Closures and Type Inference](https://taytwkim.vercel.app/blog/compiler/002-coco2/)
 - [A-Normal Form and Optimizations](https://taytwkim.vercel.app/blog/compiler/003-coco3/)
 - [Data-flow Analysis on a Control-flow Graph](https://taytwkim.vercel.app/blog/compiler/004-coco4/)
